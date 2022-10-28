@@ -72,19 +72,28 @@ body {
    font-weight: 400px;
    font-size: 15px;
 }
-
+.conteudo{
+   display: flex;
+   
+   
+}
 #primeira-secao {
-   border: 3px dashed yellow;
+   /*border: 3px dashed yellow;*/
+   width: 50%;
+   height: 700px;
+   padding: 24px;
+   order: 2;
 }
 
 #segunda-secao {
-   border: 3px dashed black;
-   width: 90%;
+   /*border: 3px dashed black;*/
+   width: 50%;
    height: 700px;
    display: flex;
    flex-direction: column;
    align-items: center;
-   padding: 24px;
+   padding: 10%;
+   order: 1;
 }
 
 #segunda-secao h1 {
