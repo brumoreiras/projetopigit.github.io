@@ -19,22 +19,28 @@
 @import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Comforter+Brush&family=Fruktur&family=Roboto&family=Roboto+Mono&family=Sarala&family=Syne:wght@800&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Comforter+Brush&family=Fruktur&family=Inter&family=Roboto&family=Roboto+Mono&family=Sarala&family=Syne:wght@800&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Comforter+Brush&family=Fruktur&family=Inter:wght@200;400&family=Roboto&family=Roboto+Mono&family=Sarala&family=Syne:wght@800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Comforter+Brush&family=Fruktur&family=Inter:wght@200;300;400&family=Roboto&family=Roboto+Mono&family=Sarala&family=Syne:wght@800&display=swap');
 
 body {
-   background-color: #F8F8F8;
+  background-color: #F8F8F8;
+   /* background: linear-gradient(90.21deg, #4060E5 0.19%, #758FF9 99.84%);*/
+   /*background-color: #1E1E1E;*/
+
 }
 
 .container-principal {
    border-radius: 30px;
+   /*background-image: linear-gradient(to right, #E0E0E0 0, #C0C0C0 40%, #B8B8B8 50%);*/
+   background-image: linear-gradient(to left, #4466EA 50%, #4466EA 0, #EFEFEF 50%);
 }
 
 .container-principal {
    background-color: #E0E0E0;
-   border: 3px dashed black;
+   /* border: 3px dashed black;*/
    width: 90%;
    height: 800px;
-   margin: 5% 0 0 5%;
-   box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.2);
+   margin: 3.5% 0 0 5%;
+   box-shadow: 10px 10px 10px rgba(0, 0, 0.1, 0.2);
 
 }
 
@@ -49,12 +55,13 @@ body {
 }
 
 #top-pagina h1 {
-   font-family: --text-importante;
+   font-family: 'Syne', sans-serif;
    font-weight: 800;
-   font-size: 36px;
+   font-size: 32px;
    margin-bottom: 15px;
 }
-#top-pagina img{
+
+#top-pagina img {
    width: auto;
    height: 30px;
    align-items: center;
@@ -67,16 +74,16 @@ body {
 
 .menu-bar-item {
    font-family: 'Sarala', sans-serif;
-   color: #303030;
+   color: #EFEFEF;
    text-decoration: none;
    font-weight: 400px;
    font-size: 15px;
 }
-.conteudo{
+
+.conteudo {
    display: flex;
-   
-   
 }
+
 #primeira-secao {
    /*border: 3px dashed yellow;*/
    width: 50%;
@@ -104,7 +111,10 @@ body {
 }
 
 #segunda-secao a {
-   padding: 2px 0 15px 0;   
+   padding: 12px 0 15px 0;
+   margin-left: 15px;
+   font-family: 'Inter', sans-serif;
+   font-size: 12px;
 }
 
 .cadastro {
@@ -119,13 +129,25 @@ body {
    width: 560px;
    margin: 10px;
    padding: 24px 16px 8px;
+   border: #C0C0C0  solid 2px;
+   border-radius: 15px;
+   
 }
 
 #botao-entrar {
    font-family: Arial, Helvetica, sans-serif;
    font-size: 18px;
    font-weight: 300;
+   color: #EFEFEF;
+   background-color: #4466EA;
+   border-radius: 15px;
    padding: 20px;
    letter-spacing: 5px;
+   width: 560px;
+   margin: 10px;
+   
+
+   
 }
+
 /*uma linha de teste*/
