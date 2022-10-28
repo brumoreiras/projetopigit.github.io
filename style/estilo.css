@@ -11,16 +11,16 @@
    /*font-weight: 800*/
    --title-h1eh2: font-family: 'Inter', sans-serif;
    /*Para h2 usar um font-weight: 200 ou 300*/
-
+   --paragrafos: font-family: 'Roboto Mono', monospace;
 }
 
-/*
+
 @import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Comforter+Brush&family=Fruktur&family=Roboto&family=Roboto+Mono&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Comforter+Brush&family=Fruktur&family=Roboto&family=Roboto+Mono&family=Sarala&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Comforter+Brush&family=Fruktur&family=Roboto&family=Roboto+Mono&family=Sarala&family=Syne:wght@800&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Comforter+Brush&family=Fruktur&family=Inter&family=Roboto&family=Roboto+Mono&family=Sarala&family=Syne:wght@800&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Comforter+Brush&family=Fruktur&family=Inter:wght@200;400&family=Roboto&family=Roboto+Mono&family=Sarala&family=Syne:wght@800&display=swap');
-*/
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Comforter+Brush&family=Fruktur&family=Inter:wght@200;300;400&family=Roboto&family=Roboto+Mono&family=Sarala&family=Syne:wght@800&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Comforter+Brush&family=Fruktur&family=Inter:wght@200;300;400&family=Roboto&family=Roboto+Mono&family=Sarala&family=Syne:wght@800&display=swap');
 
 body {
@@ -107,12 +107,15 @@ div#caixa-de-informacao{
    text-align: left;
    margin: 0 10%;
 }
-#primeira-secao p{
+#primeira-secao p{  
+   font-family: var(--paragrafos);
+   font-weight: bold 400;
    font-size: 16px;
    text-align: left;
    padding: 20px;
    margin:2% 8%;
 }
+
 #saiba-mais{
    font-size: 16px;
    width: 200px;
@@ -193,4 +196,63 @@ input#email, input#password{
    transform: scale(0.98);
 }
 
-/*uma linha de teste*/
+/*Estilização de cadastro */
+
+#segunda-secao-cadastro {
+   /* border: 3px dashed yellow;*/
+    width: 50%;
+    height: 700px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 10%;
+    order: 1;
+    padding: 5%;
+ }
+ #posicionar h1{
+    text-align: center;
+    font-size: 22px;
+    font-family: 'Inter', sans-serif;
+    font-weight: 700;
+    margin: 0 0 20px;
+    padding: 15px;
+    letter-spacing: 5px;
+ }
+ #caixa-de-entrada-de-dados p{
+   font-family: var(--paragrafos);
+   font-weight: 800;
+   font: bold;    
+   font-size: 16px;
+   
+ }
+
+ #caixa-de-entrada-de-dados{  
+   width: 100vh;
+   height: auto;
+   /*border: 3px dashed black;*/
+   display: flex;
+   flex-direction: row;
+   flex-wrap: wrap;
+   gap: 10px 30px;
+   justify-content: center;
+   
+}
+
+ .item-cadastro{
+   width: 300px;
+   height: 30px;
+   border: #C0C0C0  solid 2px;
+   border-radius: 5px;   
+}
+ 
+ #botao-concluir{  
+   background-color: #4466EA;
+   color:#EFEFEF ;
+   letter-spacing: 5px;
+   height: 50px;
+   margin-top: 100px;
+   padding: 12px;
+   border: #C0C0C0  solid 3px;
+   border-radius: 15px; 
+}
+ 
