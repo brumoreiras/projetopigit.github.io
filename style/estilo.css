@@ -14,11 +14,13 @@
 
 }
 
+/*
 @import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Comforter+Brush&family=Fruktur&family=Roboto&family=Roboto+Mono&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Comforter+Brush&family=Fruktur&family=Roboto&family=Roboto+Mono&family=Sarala&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Comforter+Brush&family=Fruktur&family=Roboto&family=Roboto+Mono&family=Sarala&family=Syne:wght@800&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Comforter+Brush&family=Fruktur&family=Inter&family=Roboto&family=Roboto+Mono&family=Sarala&family=Syne:wght@800&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Comforter+Brush&family=Fruktur&family=Inter:wght@200;400&family=Roboto&family=Roboto+Mono&family=Sarala&family=Syne:wght@800&display=swap');
+*/
 @import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Comforter+Brush&family=Fruktur&family=Inter:wght@200;300;400&family=Roboto&family=Roboto+Mono&family=Sarala&family=Syne:wght@800&display=swap');
 
 body {
@@ -62,14 +64,17 @@ body {
 }
 
 #top-pagina img {
-   width: auto;
+   width: 30px;
    height: 30px;
    align-items: center;
+   
 }
 
 .menu-bar {
    display: flex;
    gap: 42px;
+   align-items: center;
+   margin-left: 50%;
 }
 
 .menu-bar-item {
@@ -91,6 +96,30 @@ body {
    padding: 24px;
    order: 2;
 }
+div#caixa-de-informacao{
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+   margin-top: 20%;   
+}
+#primeira-secao h1{
+   font-size: 50px;
+   text-align: left;
+   margin: 0 10%;
+}
+#primeira-secao p{
+   font-size: 16px;
+   text-align: left;
+   padding: 20px;
+   margin:2% 8%;
+}
+#saiba-mais{
+   font-size: 16px;
+   width: 200px;
+   height: 40px;
+   border-radius: 10px;
+   
+}
 
 #segunda-secao {
    /*border: 3px dashed black;*/
@@ -106,22 +135,33 @@ body {
 #segunda-secao h1 {
    font-size: 22px;
    font-family: 'Inter', sans-serif;
-   font-weight: 500;
+   font-weight: 700;
+   margin: 0 0 15px;
+   letter-spacing: 5px;
 
 }
 
-#segunda-secao a {
+.redefine-senha {
+   display: inline;  
    padding: 12px 0 15px 0;
    margin-left: 15px;
    font-family: 'Inter', sans-serif;
    font-size: 12px;
+   
+   
+}
+a#redefine{
+   padding-left: 200px;
+   text-decoration: none;
 }
 
 .cadastro {
-   font-size: 18px;
-   font-family: 'Inter', sans-serif;
+   font-size: 16px;
+   font-family: 'Sarala', sans-serif;
    column-gap: 20px;
-   font-weight: 200;
+   font-weight: 100;
+   text-decoration: none;
+   
 }
 
 .campo-login {
@@ -130,8 +170,11 @@ body {
    margin: 10px;
    padding: 24px 16px 8px;
    border: #C0C0C0  solid 2px;
-   border-radius: 15px;
-   
+   border-radius: 15px;   
+}
+input#email, input#password{
+   padding: 20px;
+   color: #C8C8C8;
 }
 
 #botao-entrar {
@@ -144,10 +187,10 @@ body {
    padding: 20px;
    letter-spacing: 5px;
    width: 560px;
-   margin: 10px;
-   
-
-   
+   margin: 50px 10px; 
+}
+#botao-entrar:hover{
+   transform: scale(0.98);
 }
 
 /*uma linha de teste*/
