@@ -194,7 +194,7 @@ input#email, input#password{
    transform: scale(0.98);
 }
 
-/*Estilização de cadastro */
+/*Estilização pagina cadastro */
 
 #segunda-secao-cadastro {
    /* border: 3px dashed yellow;*/
@@ -225,9 +225,9 @@ input#email, input#password{
  }
 
  #caixa-de-entrada-de-dados{  
-   width: 100vh;
-   height: auto;
    /*border: 3px dashed black;*/
+   width: 100vh;
+   height: auto;  
    display: flex;
    flex-direction: row;
    flex-wrap: wrap;
@@ -236,7 +236,7 @@ input#email, input#password{
    
 }
 
- .item-cadastro{
+.item-cadastro{
    width: 300px;
    height: 30px;
    border: #C0C0C0  solid 2px;
@@ -253,7 +253,7 @@ input#email, input#password{
    border: #C0C0C0  solid 3px;
    border-radius: 15px; 
 }
-/*Opções de cadastro*/
+/*Estilização opções de cadastro*/
 #container-principal-opcoes {
    border-radius: 30px;
    /*background-image: linear-gradient(to right, #E0E0E0 0, #C0C0C0 40%, #B8B8B8 50%);*/
@@ -322,4 +322,42 @@ input#email, input#password{
 }
 #conta-empresa a{
    text-decoration: none;
+}
+/*Estilização pagina contato */
+#formulario-contato{  
+   /*border: 3px dashed black;*/
+   width: 100vh;
+   height: auto;   
+   display: flex;
+   flex-direction: column;   
+   gap: 10px;
+   align-items: center;
+   justify-content: center;
+   
+}
+input::placeholder{
+   padding: 10px;
+}
+.item-formulario{
+   width: 250px;
+   height: 40px;
+   border: #C0C0C0  solid 2px;
+   border-radius: 5px;   
+}
+#box-menssagem{   
+   height: 200px;
+   
+}
+#box-menssagem::placeholder{
+   position: absolute;
+}
+#botao-formulario-contato{     
+   background-color: #4466EA;
+   color:#EFEFEF ;
+   letter-spacing: 5px;
+   height: 45px;
+   margin-top: 10px;
+   padding: 12px;
+   border: #C0C0C0  solid 3px;
+   border-radius: 15px; 
 }
