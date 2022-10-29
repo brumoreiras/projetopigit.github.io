@@ -23,40 +23,63 @@
 
         <main class="conteudo">
 
-            <section id="primeira-secao">
-                <div id="caixa-de-informacao">
-                    <h1>Descubra o que esta acontecendo a sua volta.</h1>
-                    <p>Ao se cadastrar você terá acesso de tudo que está rolando a sua volta, e acesso também aos
-                        melhores que a sua cidade tem a oferecer de entretenimento.
-                        <br><span>NÃO FIQUE DE FORA DESSA!</span>
-                    </p>
-                    <!-- Acho que o botão não faz sentido aqui, vou deixa-lo para caso de dúvidas e estilização. 
-                    <input type="button" value="Saiba Mais" id="saiba-mais">
-                    -->
-                    <img src="" alt="">
+            <section id="primeira-secao-contato">
+                <div id="caixa-de-contato">
 
+                    <h1>Fale Conosco</h1>
+                    <h2>Informações de contato</h2>
+
+                    <div class="informacao-de-contato">
+
+                        <img src="/img/mail.svg" alt="email">
+                        <div>
+                            <h3 id="formatar1">E-mail</h3>
+                            <p id="paragrafo1">iexplore@universoparalelo.com</p>
+                        </div>
+                    </div>
+
+                    <div class="informacao-de-contato">
+
+                        <img src="/img/phone.svg" alt="telefone">
+                        <div>
+                            <h3 id="formatar2">Telefone</h3>
+                            <p id="paragrafo2">(11) 5584-8455</p>
+                        </div>
+                    </div>
+
+                    <div class="informacao-de-contato">
+
+                        <img src="/img/clock.svg" alt="horario">
+                        <div>
+                            <h3 id="formatar3">Horário de atendimento</h3>
+                            <p id="paragrafo3">Seg. à Sex. - 08:00 às 18:00</p>
+                        </div>
+                    </div>
                 </div>
             </section>
 
             <section id="segunda-secao-cadastro">
                 <div id="posicionar">
-                    <h1>Fale Conosco</h1>
+                    <h1>Envie sua mensagem para nós</h1>
 
                     <div id="formulario-contato">
                         <div>
                             <input type="text" name="Nome" id="" placeholder="Nome completo" class="item-formulario">
                         </div>
                         <div>
-                            <input type="number" name="Telefone" id="" placeholder="(00)00000-0000" class="item-formulario">
+                            <input type="number" name="Telefone" id="" placeholder="(00)00000-0000" maxlength="11"
+                                class="item-formulario">
                         </div>
                         <div>
-                            <input type="email" name="Senha" id="" placeholder="E-mail"  class="item-formulario">
+                            <input type="email" name="Senha" id="" placeholder="E-mail" class="item-formulario">
                         </div>
                         <div>
-                            <input type="text" name="box-text" id="box-assunto" placeholder="Assunto" class="item-formulario">
+                            <input type="text" name="box-text" id="box-assunto" placeholder="Assunto"
+                                class="item-formulario">
                         </div>
                         <div>
-                            <input type="text" name="box-text" id="box-menssagem" placeholder="Menssagem" class="item-formulario">
+                            <input type="text" name="box-text" id="box-menssagem" placeholder="Menssagem"
+                                class="item-formulario">
                         </div>
 
                         <div>

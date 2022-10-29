@@ -324,6 +324,80 @@ input#email, input#password{
    text-decoration: none;
 }
 /*Estilização pagina contato */
+#primeira-secao-contato {
+   /*border: 3px dashed yellow;*/
+   width: 50%;
+   height: 700px;
+   padding: 24px;
+   order: 2;
+   color: #F8F8F8;
+}
+div#caixa-de-contato{
+   /*border: 3px dashed black;*/
+   display: flex;
+   flex-direction: column;
+   align-items: center;   
+   gap: 5px;  
+   margin-top: 60px;
+}
+div#caixa-de-contato h1{
+   /*border: 3px dashed black;   */
+   width: 400px;
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+   gap: 32px;
+   padding: 20px;
+   font-size: 32px;
+   font-family: 'Inter', sans-serif;
+   font-weight: 700;
+   letter-spacing: 5px;
+   
+}
+div#caixa-de-contato h2{
+  /* border: 3px dashed black;   */
+   width: 400px;
+   font-family: 'Inter', sans-serif;
+   text-align: left;
+   font-weight: 200;
+   letter-spacing: 4px;
+}
+.informacao-de-contato{
+  /*border: 3px dashed black;*/
+   padding: 20px;
+   display: flex;
+   flex-direction: row; 
+   align-items: center;
+   gap: 20px;   
+
+}
+.informacao-de-contato div{
+  /* border: 3px dashed black;        */
+   width: 300px;
+}
+.informacao-de-contato img{
+  /* border: 3px dashed black;   */
+  align-items: baseline;
+      
+}
+.informacao-de-contato h3{
+  /* border: 3px dashed black;   */
+  font-family: 'Inter', sans-serif;
+   font-weight: bold 100;
+   align-self: flex-start;
+   align-items: baseline;
+      
+}
+.informacao-de-contato p{
+   /* border: 3px dashed black;   */
+   align-items: baseline;
+   font-family: 'Inter', sans-serif;
+    font-weight: 100;
+    align-self: flex-start;
+       
+ }
+
+
 #formulario-contato{  
    /*border: 3px dashed black;*/
    width: 100vh;
@@ -339,7 +413,7 @@ input::placeholder{
    padding: 10px;
 }
 .item-formulario{
-   width: 250px;
+   width: 350px;
    height: 40px;
    border: #C0C0C0  solid 2px;
    border-radius: 5px;   
