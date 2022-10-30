@@ -1,3 +1,11 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Comforter+Brush&family=Fruktur&family=Roboto&family=Roboto+Mono&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Comforter+Brush&family=Fruktur&family=Roboto&family=Roboto+Mono&family=Sarala&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Comforter+Brush&family=Fruktur&family=Roboto&family=Roboto+Mono&family=Sarala&family=Syne:wght@800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Comforter+Brush&family=Fruktur&family=Inter&family=Roboto&family=Roboto+Mono&family=Sarala&family=Syne:wght@800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Comforter+Brush&family=Fruktur&family=Inter:wght@200;400&family=Roboto&family=Roboto+Mono&family=Sarala&family=Syne:wght@800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Comforter+Brush&family=Fruktur&family=Inter:wght@200;300;400&family=Roboto&family=Roboto+Mono&family=Sarala&family=Syne:wght@800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Comforter+Brush&family=Fruktur&family=Inter:wght@200;300;400&family=Roboto&family=Roboto+Mono&family=Sarala&family=Syne:wght@800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Comforter+Brush&family=Fruktur&family=Inter:wght@200;300;400&family=Roboto&family=Roboto+Mono&family=Sarala&family=Syne:wght@800&display=swap');
 * {
    padding: 0;
    margin: 0;
@@ -12,14 +20,13 @@
    --title-h1eh2: font-family: 'Inter', sans-serif;
    /*Para h2 usar um font-weight: 200 ou 300*/
    --paragrafos: font-family: 'Roboto Mono', monospace;
+   --color: #f0f0f0;
+   --color-backgroud1: #bbdeea;
+   --color-backgroud2: #bcc2ef;
+   --color-font-paragrafo1: #1f2426;
+   --color-font-paragrafo2: #000;
+   --title-h1eh2: font-family: 'Inter', sans-serif;
 }
-@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Comforter+Brush&family=Fruktur&family=Roboto&family=Roboto+Mono&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Comforter+Brush&family=Fruktur&family=Roboto&family=Roboto+Mono&family=Sarala&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Comforter+Brush&family=Fruktur&family=Roboto&family=Roboto+Mono&family=Sarala&family=Syne:wght@800&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Comforter+Brush&family=Fruktur&family=Inter&family=Roboto&family=Roboto+Mono&family=Sarala&family=Syne:wght@800&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Comforter+Brush&family=Fruktur&family=Inter:wght@200;400&family=Roboto&family=Roboto+Mono&family=Sarala&family=Syne:wght@800&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Comforter+Brush&family=Fruktur&family=Inter:wght@200;300;400&family=Roboto&family=Roboto+Mono&family=Sarala&family=Syne:wght@800&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Comforter+Brush&family=Fruktur&family=Inter:wght@200;300;400&family=Roboto&family=Roboto+Mono&family=Sarala&family=Syne:wght@800&display=swap');
 
 body {
   background-color: #F8F8F8;
@@ -434,4 +441,158 @@ input::placeholder{
    padding: 12px;
    border: #C0C0C0  solid 3px;
    border-radius: 15px; 
+}
+/* Estilização pagina cadastroPJ */
+.estilizado {
+   background-image: radial-gradient(circle, rgb(27, 28, 133) 7%, rgba(3,55,163,1) 45%, rgba(176,182,227,1) 100%);
+   width: 100%;
+   height: 100vh;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+}
+
+/* aqui nesse container principal eu alterei 
+   width, height, display, box-shadow
+*/
+.principal{
+   /* border: 3px dashed black;*/
+   background-color: white;
+   width: 90%;
+   height: 90vh;
+   display: flex;
+   flex-direction: row;
+   flex-wrap: wrap;
+   box-shadow: 5px 5px 10px rgba(0, 0, 0, .212);
+   border-radius: 30px;
+}
+
+.menu-header {
+   /*border: 3px dashed black;*/
+   display: flex;
+   flex-direction: row;
+   justify-content: space-around;
+   align-items: center;
+   width: 100%;
+   height: 60px;
+   padding: 2rem;
+   border-bottom: 2px solid black;
+
+}
+
+.menu-bar {
+   display: flex;
+   flex-direction: row;
+   gap: 42px;
+}
+
+.menu-bar-item {
+   font-family: 'Sarala', sans-serif;
+   color: black;
+   text-decoration: none;
+   font-weight: 400px;
+   font-size: 15px;
+}
+
+.conteudo-principal {
+   /*border: 3px dashed black;*/
+   display: flex;
+   flex-direction: row;
+  
+}
+
+.image {
+   /*
+   border: 3px dashed black;
+   justify-content: center;
+   align-items: center;
+   */
+   width: 50%;
+   display: flex;    
+   padding: 0.2rem;
+   width: 20rem;
+
+}
+/*O problema aqui está na imagem eu preciso descobrir o que é para poder ficar tudo enquadrado direito.*/
+.teste{
+   width: 800px;
+}
+.form {
+   /*border: 3px dashed black;*/
+   width: 50%;
+   display: flex;    
+   justify-content: center;
+   align-items: center;
+   flex-direction: column;
+   background-color: #fff;
+   padding: 3rem;
+   border-radius: 30px;
+   height: 90%;
+   margin-top: 1.5rem;
+   
+   border: 0.1px solid rgba(0, 0, 0, .2);
+   box-shadow: 5px 3px 3px 5px rgba(0, 0, 0, .2);
+}
+
+.form-header {
+   margin-bottom: 3rem;
+}
+
+.form-header h1::after {
+   content: '';
+   display: block;
+   width: 5rem;
+   height: 0.3rem;
+   background-color: #4466EA;
+   margin: 0 auto;
+   position: absolute;
+   border-radius: 10px;
+}
+
+.input-group {
+   display: flex;
+   flex-wrap: wrap;
+   justify-content: space-between;
+   align-self: flex-start;
+   padding: 1rem 0;
+}
+
+.input-box {
+   display: flex;
+   flex-direction: column;
+   margin-bottom: 1.1rem;
+}
+
+.input-box input {
+   margin: 0.6rem 0;
+   padding: 0.8rem 1.2rem;
+   border: none;
+   border-radius: 10px;
+   box-shadow: 1px 1px 6px #0000001c;
+}
+.input-box input:hover{
+   background-color: #eeeeee75;
+}
+
+.input-box label{
+   font-size: 1rem;
+   font-weight: 600;
+   color: #000000c0;
+}
+.input-box input::placeholder{
+   color: #000000be;
+}
+.botao-concluir button{
+   width: 800px;
+   margin-top: 2.5rem;
+   background-color: #4466EA;
+   padding: 0.62rem;
+   border-radius: 5px;
+   cursor: pointer;
+   
+}
+.botao-concluir a{
+   text-decoration: none;
+   color: #fff;
+   padding: 2rem;
 }

@@ -9,84 +9,112 @@
     <title>iExplore</title>
 </head>
 
-<body>
-    <section class="container-principal">
-        <header id="top-pagina">
-            <h1>iExplore</h1>
-            <nav class="menu-bar">
-                <a class="menu-bar-item" href="/index.html">Sobre</a>
-                <a class="menu-bar-item" href="/paginas/contato.html">Contato</a>
-                <a class="menu-bar-item" href="/index.html">Login</a>                
-                <img src="/img/align-justify.png" alt="menu-list">
-            </nav>
+<body class="estilizado">
+    <section class="principal">
+
+        <header class="menu-header">
+
+            <div class="icone-menu">
+                <h1>iExplore</h1>
+            </div>            
+          
+                <nav class="menu-bar">
+                    <a class="menu-bar-item" href="/index.html">Sobre</a>
+                    <a class="menu-bar-item" href="/paginas/contato.html">Contato</a>
+                    <a class="menu-bar-item" href="/index.html">Login</a>
+                    <img src="/img/align-justify.png" alt="menu-list">
+                </nav>
+            
         </header>
 
-        <main class="conteudo">
+      <main class="conteudo-principal">
 
-            <section id="primeira-secao">
-                <div id="caixa-de-informacao">
-                    <h1>Descubra o que esta acontecendo a sua volta.</h1>
-                    <p>Ao se cadastrar você terá acesso de tudo que está rolando a sua volta, e acesso também aos
-                        melhores que a sua cidade tem a oferecer de entretenimento.
-                        <br><span>NÃO FIQUE DE FORA DESSA!</span>
-                    </p>
-                    <!-- Acho que o botão não faz sentido aqui, vou deixa-lo para caso de dúvidas e estilização. 
-                    <input type="button" value="Saiba Mais" id="saiba-mais">
-                    -->
-                    <img src="" alt="">
-                    
-                </div>
-            </section>
+            <div class="teste">
+                <div class="image">
+                    <img src="/img/undraw_location_tracking_re_n3ok.svg" alt="imagem apresentação">
+                </div>         
+            </div>
 
-            <section id="segunda-secao-cadastro">
-                <div id="posicionar">
-                    <h1>Cadastro</h1>
-                    <!--
-                <p class="cadastro"><span>Novo no iExplore? <a href="" class="cadastro">Cadastre-se</a></span></p>
-                -->
-                    <div id="caixa-de-entrada-de-dados">
-                        <div>
-                            <p>Nome</p>
-                            <input type="text" name="Nome" id="" value="" class="item-cadastro">
-                        </div>
-                        <div>
-                            <p>Sobrenome</p>
-                            <input type="text" name="Sobrenome" id="" value="" class="item-cadastro">
-                        </div>
-                        <div>
-                            <p>Data de Nascimento</p>
-                            <input type="date" name="Nascimento" id="" value="" class="item-cadastro">
-                        </div>
-                        <div>
-                            <p>Telefone</p>
-                            <input type="number" name="Telefone" id="" value="" class="item-cadastro">
-                        </div>
-
-                        <!-- Aqui são os inputs de confirmação de dados de login -->
-                        <div>
-                            <p>Senha</p>
-                            <input type="email" name="E-mail" id="" value="" class="item-cadastro">
-                        </div>
-                        <div>
-                            <p>Confirme sua Senha</p>
-                            <input type="email" name="Confirme E-mail" id="" value="" class="item-cadastro">
-                        </div>
-                        <div>
-                            <p>E-mail</p>
-                            <input type="password" name="Senha" id="" value="" class="item-cadastro">
-                        </div>
-                        <div>
-                            <p>Confirme seu E-mail</p>
-                            <input type="password" name="Confirme Senha" id="" value="" class="item-cadastro">
-                        </div>
-                        <div>
-                            <input type="button" value="Concluir" id="botao-concluir" class="item-cadastro">
-                            <!--  <input type="button" value="Cancelar" class="item-cadastro">  -->
-                        </div>
+            <div class="form">
+                <form action="#">
+                    <div class="form-header">
+                        <h1>Cadastre-se</h1>
                     </div>
-                </div>
-            </section>
+                    <div class="input-group">
+                        <div class="input-box">
+                            <label for="razao-social">Razão social</label>
+                            <input type="text" name="razao-social" id="razao-social"
+                                placeholder="Digite sua razão social" required>
+                        </div>
+                        <div class="input-box">
+                            <label for="cnpj">CNPJ</label>
+                            <input type="number" name="cnpj" id="cnpj" placeholder="xx.xxx.xxx/xxxx-xx" required>
+                        </div>
+                        <div class="input-box">
+                            <label for="endereco">Endereço</label>
+                            <input type="text" name="endereco" id="endereco"
+                                placeholder="Digite o endereço do estabelecimeto" required>
+                        </div>
+                        <div class="input-box">
+                            <label for="cep">CEP</label>
+                            <input type="number" name="cep" id="cep" placeholder="Digite o CEP" required>
+                        </div>
+                        <div class="input-box">
+                            <label for="bairro">Bairro</label>
+                            <input type="text" name="bairro" id="bairro" placeholder="Digite o bairro" required>
+                        </div>
+                        <div class="input-box">
+                            <label for="cidade">Cidade</label>
+                            <input type="text" name="cidade" id="cidade" placeholder="Digite o cidade" required>
+                        </div>
+                        <div class="input-box">
+                            <label for="estado">Estado</label>
+                            <input type="text" name="estado" id="estado" placeholder="Digite o estado" required>
+                        </div>
+                        <div class="input-box">
+                            <label for="tel">Telefone</label>
+                            <input type="number" name="tel" id="tel" placeholder="(xx) xxxxx-xxxx" required>
+                        </div>
+                        <div class="input-box">
+                            <label for="tipo-servico">Tipo de serviço</label>
+                            <input type="text" name="tipo-servico" id="tipo-servico"
+                                placeholder="Qual é o ramo da sua empresa?" required>
+                        </div>
+                        <div class="input-box">
+                            <label for="horario">Horário de atendimento</label>
+                            <input type="text" name="horario" id="horario" placeholder="Qual é o de atendimento?"
+                                required>
+                        </div>
+                        <div class="input-box">
+                            <label for="email">E-mail</label>
+                            <input type="email" name="email" id="email" placeholder="Digite seu e-mail" required>
+                        </div>
+                        <div class="input-box">
+                            <label for="email">Confirme seu e-mail</label>
+                            <input type="email" name="email" id="email" placeholder="Digite confirme seu e-mail"
+                                required>
+                        </div>
+                        <!--Criar no javascript uma validação de caracteres de senha-->
+                        <div class="input-box">
+                            <label for="password">Crie uma senha</label>
+                            <input type="password" name="password" id="password" placeholder="Digite uma senha"
+                                required>
+                        </div>
+                        <div class="input-box">
+                            <label for="confirme-password">Crie confirme sua senha</label>
+                            <input type="password" name="confirme-password" id="confirme-password"
+                                placeholder="Digite confirme sua senha" required>
+                        </div>
+                        <div class="botao-concluir">
+                            <button ><a href="#">Concluir cadastro</a></button>
+                        </div>
+
+                    </div>
+                </form>
+            </div>
+
         </main>
+
     </section>
 </body>
 
