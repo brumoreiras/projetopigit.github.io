@@ -446,7 +446,7 @@ input::placeholder{
 .estilizado {
    background-image: radial-gradient(circle, rgb(27, 28, 133) 7%, rgba(3,55,163,1) 45%, rgba(176,182,227,1) 100%);
    width: 100%;
-   height: 100vh;
+   height: 115vh;
    display: flex;
    justify-content: center;
    align-items: center;
@@ -455,18 +455,22 @@ input::placeholder{
 /* aqui nesse container principal eu alterei 
    width, height, display, box-shadow
 */
-.principal{
+.principal{  
    /* border: 3px dashed black;*/
    background-color: white;
    width: 90%;
-   height: 90vh;
+   height: auto;
    display: flex;
    flex-direction: row;
    flex-wrap: wrap;
    box-shadow: 5px 5px 10px rgba(0, 0, 0, .212);
    border-radius: 30px;
+   
 }
-
+.icone-menu img{
+   height: 4.5rem;
+   padding: 1rem;
+}
 .menu-header {
    /*border: 3px dashed black;*/
    display: flex;
@@ -474,9 +478,9 @@ input::placeholder{
    justify-content: space-around;
    align-items: center;
    width: 100%;
-   height: 60px;
+   height: 4.5rem;
    padding: 2rem;
-   border-bottom: 2px solid black;
+   border-bottom: 2px solid #d8d3ed;
 
 }
 
@@ -498,25 +502,25 @@ input::placeholder{
    /*border: 3px dashed black;*/
    display: flex;
    flex-direction: row;
+   
   
 }
 
-.image {
+.image {   
    /*
    border: 3px dashed black;
    justify-content: center;
    align-items: center;
    */
-   width: 50%;
+   width: 45%;
    display: flex;    
-   padding: 0.2rem;
-   width: 20rem;
+   padding: 1rem;
+   
+  
 
 }
 /*O problema aqui está na imagem eu preciso descobrir o que é para poder ficar tudo enquadrado direito.*/
-.teste{
-   width: 800px;
-}
+
 .form {
    /*border: 3px dashed black;*/
    width: 50%;
@@ -528,14 +532,13 @@ input::placeholder{
    padding: 3rem;
    border-radius: 30px;
    height: 90%;
-   margin-top: 1.5rem;
-   
+   margin-top: 1.5rem;   
    border: 0.1px solid rgba(0, 0, 0, .2);
    box-shadow: 5px 3px 3px 5px rgba(0, 0, 0, .2);
 }
 
 .form-header {
-   margin-bottom: 3rem;
+   margin-bottom: 1.5rem;
 }
 
 .form-header h1::after {
@@ -549,18 +552,22 @@ input::placeholder{
    border-radius: 10px;
 }
 
-.input-group {
+.input-group {   
    display: flex;
    flex-wrap: wrap;
    justify-content: space-between;
    align-self: flex-start;
    padding: 1rem 0;
+   
 }
 
 .input-box {
+   /*border: 3px dashed black;*/
    display: flex;
    flex-direction: column;
    margin-bottom: 1.1rem;
+   width: 15rem;
+   /*Estou estilizando daqui para baixo*/ 
 }
 
 .input-box input {
@@ -569,7 +576,9 @@ input::placeholder{
    border: none;
    border-radius: 10px;
    box-shadow: 1px 1px 6px #0000001c;
+   
 }
+
 .input-box input:hover{
    background-color: #eeeeee75;
 }
@@ -582,17 +591,36 @@ input::placeholder{
 .input-box input::placeholder{
    color: #000000be;
 }
+
 .botao-concluir button{
    width: 800px;
-   margin-top: 2.5rem;
+   margin-top: 2rem;
    background-color: #4466EA;
    padding: 0.62rem;
    border-radius: 5px;
-   cursor: pointer;
-   
+   cursor: pointer;   
 }
 .botao-concluir a{
    text-decoration: none;
    color: #fff;
    padding: 2rem;
+}
+.titulo-login{
+   width: 600px;
+  /* border: 3px dashed black;*/
+   margin-bottom: 1rem;
+   
+}
+#confirmacao-entrada{  
+   display: flex;
+   flex-wrap: wrap;     
+}
+#confirmacao-entrada div{
+   flex: 1 1 20rem;
+   margin: 5px;              
+}
+#confirmacao-entrada input{
+   margin: 0.6rem 0;
+   padding: 0.8rem 1.2rem;   
+ 
 }
