@@ -9,10 +9,15 @@
     <title>iExplore</title>
 </head>
 
-<body>
-    <section id="container-principal-opcoes">
-        <header id="top-pagina" class="mudanca">
-            <h1>iExplore</h1>
+<body class="estilizado">
+    <section class="principal-op-cadastro">
+
+        <header class="menu-header">
+
+            <div class="icone-menu" id="cor-logo">
+                <img src="/img/whiteLogo.svg" alt="logo">
+            </div>
+
             <nav class="menu-bar">
                 <a class="menu-bar-item" href="/index.html">Home</a>
                 <a class="menu-bar-item" href="/index.html">Sobre</a>
@@ -20,26 +25,32 @@
                 <a class="menu-bar-item" href="/index.html">Login</a>
                 <img src="/img/align-justify.png" alt="menu-list">
             </nav>
+
         </header>
 
-        <main class="conteudo">
+        <main class="conteudo-op-principal">
 
-            <section id="conta-usuario">
-                <a href="/paginas/cadastroPessoaFisica.html">
-                <div class="personaliza-usuario">
-                    <h1>Crie uma conta de usuário</h1>
-                    <img src="/img/arrow-right-circle.svg" alt="direcionador">
+           <section class="manipular-elementos">
+
+                <div id="conta-usuario">                  
+                        <a href="/paginas/cadastroPessoaFisica.html">
+                                <h1>Crie uma conta de usuário</h1>
+                        </a>
                 </div>
-            </a>
+
+                <div id="conta-empresa">
+                    <a href="/paginas/cadastroPessoaJuridica.html">
+                            <h1 id="text-title">Cadastre sua empresa</h1>
+                    </a>
+
+                </div>
+        
             </section>
 
-            <section id="conta-empresa">
-                <a href="/paginas/cadastroPessoaJuridica.html">
-                <div class="personaliza-usuario">
-                    <h1 id="text-title">Crie uma conta empresa</h1>
-                    <img src="/img/arrow-right-circle.svg" alt="direcionador">
+            <section class="info-img">
+                <div class="imagem-cadastros">
+                    <img src="/img/undraw_map_re_60yf.svg" alt="">
                 </div>
-            </a>
             </section>
 
         </main>

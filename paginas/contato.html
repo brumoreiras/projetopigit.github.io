@@ -9,10 +9,15 @@
     <title>iExplore</title>
 </head>
 
-<body>
-    <section class="container-principal">
-        <header id="top-pagina">
-            <h1>iExplore</h1>
+<body class="estilizado">
+    <section class="principal">
+
+        <header class="menu-header">
+
+            <div class="icone-menu">
+                <img src="/img/logo.svg" alt="logo">
+            </div>
+
             <nav class="menu-bar">
                 <a class="menu-bar-item" href="/index.html">Home</a>
                 <a class="menu-bar-item" href="/index.html">Sobre</a>
@@ -20,18 +25,62 @@
                 <a class="menu-bar-item" href="/index.html">Login</a>
                 <img src="/img/align-justify.png" alt="menu-list">
             </nav>
+
         </header>
 
-        <main class="conteudo">
+        <main class="conteudo-principal">
+            <section class="first-section">
+                <div id="form-contato">
+                    <form action="#">
 
-            <section id="primeira-secao-contato">
+                        <div class="form-header-contato">
+                            <h1>Envie sua mensagem para nós</h1>
+                        </div>
+
+                        <div class="titulo-dados-cadastrais">
+                            <h3>Preencha o formulário</h3>
+                        </div>
+
+                        <div class="input-group-form">
+                            <div class="input-box-form">
+                                <label for="firstname">Nome Completo</label>
+                                <input type="text" name="firstname" id="firstname" placeholder="Digite seu nome"
+                                    required>
+                            </div>
+                            <div class="input-box-form">
+                                <label for="telefone">Telefone</label>
+                                <input type="number" name="telefone" id="telefone" placeholder="(xx)xxxxx-xxxx"
+                                    maxlength="11" required>
+                            </div>
+                            <div class="input-box-form">
+                                <label for="email">E-mail</label>
+                                <input type="email" name="email" id="email" placeholder="Digite seu e-mail" required>
+                            </div>
+                            <div class="input-box-form">
+                                <label for="assunto">Assunto</label>
+                                <input type="text" name="assunto" id="assunto"
+                                    placeholder="Digite o assunto que deseja tratar" required>
+                            </div>
+                            <div class="input-box-form">
+                                <label for="box-menssagem">Menssagem</label>
+                                <input type="text" name="box-text" id="box-menssagem" placeholder="Digite uma mensagem"
+                                    required>
+                            </div>
+
+                            <div class="botao-concluir-form">
+                                <button><a href="#">Enviar</a></button>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </section>
+            <section class="second-section">
+
                 <div id="caixa-de-contato">
-
                     <h1>Fale Conosco</h1>
                     <h2>Informações de contato</h2>
 
                     <div class="informacao-de-contato">
-
                         <img src="/img/mail.svg" alt="email">
                         <div>
                             <h3 id="formatar1">E-mail</h3>
@@ -59,36 +108,8 @@
                 </div>
             </section>
 
-            <section id="segunda-secao-cadastro">
-                <div id="posicionar">
-                    <h1>Envie sua mensagem para nós</h1>
 
-                    <div id="formulario-contato">
-                        <div>
-                            <input type="text" name="Nome" id="" placeholder="Nome completo" class="item-formulario">
-                        </div>
-                        <div>
-                            <input type="number" name="Telefone" id="" placeholder="(00)00000-0000" maxlength="11"
-                                class="item-formulario">
-                        </div>
-                        <div>
-                            <input type="email" name="Senha" id="" placeholder="E-mail" class="item-formulario">
-                        </div>
-                        <div>
-                            <input type="text" name="box-text" id="box-assunto" placeholder="Assunto"
-                                class="item-formulario">
-                        </div>
-                        <div>
-                            <input type="text" name="box-text" id="box-menssagem" placeholder="Menssagem"
-                                class="item-formulario">
-                        </div>
 
-                        <div>
-                            <input type="button" value="Enviar" id="botao-formulario-contato" class="item-formulario">
-                        </div>
-                    </div>
-                </div>
-            </section>
         </main>
     </section>
 </body>

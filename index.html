@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <!---->
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -9,49 +10,89 @@
     <title>iExplore</title>
 </head>
 
-<body>
-    <section class="container-principal">
-        <header id="top-pagina">
-            <h1>iExplore</h1>
-            <nav class="menu-bar">
-                <a class="menu-bar-item" href="/index.html">Sobre</a>
-                <a class="menu-bar-item" href="/paginas/contato.html">Contato</a>
-                <a class="menu-bar-item" href="index.html">Login</a>
-                <img src="img/align-justify.png" alt="menu-list">
-            </nav>
-        </header>
+<body class="estilizado">
 
-        <main class="conteudo">
+    <body class="estilizado">
+        <section class="principal">
 
-            <section id="primeira-secao">
-                <div id="caixa-de-informacao">
-                    <h1>Bem-Vindo ao mundo das possibilidade.</h1>
-                    <p>Agora você não terá mais problemas em achar o que fazer na sua cidade, basta se cadastrar e ter
-                        acesso ao que está acontecendo a sua volta.</p>
+            <header class="menu-header">
 
-                    <input type="button" value="Saiba Mais" id="saiba-mais">
-                    <img src="" alt="">
+                <div class="icone-menu">
+                    <img src="/img/logo.svg" alt="logo">
                 </div>
-            </section>
 
-            <section id="segunda-secao">
-                <h1>Login</h1>
-                <p class="cadastro"><span>Novo no iExplore? <a href="/paginas/opcoesDeCadastro.html" class="cadastro">Cadastre-se</a></span></p>
-                <div class="caixa-de-entrada-de-dados">
-                    <input type="email" name="E-mail" value="E-mail" id="email" class="campo-login">
-                    <input type="password" name="Senha" value="password" id="password" class="campo-login">
-                    <p class="redefine-senha">A senha deve ter pelo menos 8 caracteres</p>
-                    <a href="" class="redefine-senha" id="redefine">Esqueceu a senha?</a>
+                <nav class="menu-bar">
+                    <a class="menu-bar-item" href="/index.html">Home</a>
+                    <a class="menu-bar-item" href="/index.html">Sobre</a>
+                    <a class="menu-bar-item" href="/paginas/contato.html">Contato</a>
+                    <a class="menu-bar-item" href="/index.html">Login</a>
+                    <img src="/img/align-justify.png" alt="menu-list">
+                </nav>
 
-                    <input type="button" value="Entrar" id="botao-entrar">
-                    <!-- Botão foi temporariamente excluido para ver se o layout fica melhor sem ele. -->
-                    <!-- 
-                    <input type="button" value="Crir nova conta" class="campo-login">
-                    -->
-                </div>
-            </section>
-        </main>
-    </section>
-</body>
+            </header>
+
+            <main class="conteudo-principal">
+
+                <section class="first-section-login">
+
+                    <div class="alinhando">
+                        <div class="texto-informativo">                        
+                            <h1>Bem-Vindo ao mundo das possibilidade.</h1>
+                            <p>Agora você não terá mais problemas em achar o que fazer na sua cidade, basta se cadastrar                               e
+                                ter acesso ao que está acontecendo a sua volta.</p>
+                        </div>
+
+                        <div class="entrar">
+                            <button><a href="#">Entrar</a></button>
+                        </div>
+                    </div>
+
+                </section>
+
+                <section class="second-section-login">
+
+                    <div class="form-login">
+                        <form action="#">
+
+                            <div class="form-header-login">
+                                <h1>Cadastre-se</h1>
+                            </div>
+                            <div class="input-group-login">
+
+                                <div class="input-box-login">
+                                    <label for="password">Usuário</label>
+                                    <input type="password" name="password" id="password" placeholder="Digite seu e-mail"
+                                        required>
+                                </div>
+
+                                <div class="input-box-login">
+                                    <label for="confirme-password">Senha</label>
+                                    <input type="password" name="confirme-password" id="confirme-password"
+                                        placeholder="Digite sua senha" required>
+                                </div>
+                            </div>
+                            <div class="lembretes">
+                                <div class="cadastre-se">
+                                    <a href="/paginas/opcoesDeCadastro.html" class="cadastro">Cadastre-se</a></span></p>
+                                </div>
+                                <div class="esqueceu-senha">
+                                    <a href="" class="redefine-senha" id="redefine">Esqueceu a senha?</a>
+                                </div>
+                            </div>
+                            <div class="entrar-login">
+                                <button><a href="#">Entrar</a></button>
+                            </div>
+
+
+                    </div>
+
+                    </form>
+
+                    </div>
+                </section>
+
+            </main>
+        </section>
+    </body>
 
 </html>
