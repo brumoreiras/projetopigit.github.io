@@ -176,8 +176,9 @@
 
 .entrar-login a {
    text-decoration: none;
-   color: #000;
+   color: #fff;
    padding: 2rem;
+   letter-spacing: 0.4rem;
 }
 
 /*Estilização pagina cadastro */
@@ -267,7 +268,8 @@
    display: flex;
    flex-direction: column;
    margin-bottom: 1.1rem;
-   width: 15rem;
+   width: 20rem;
+   min-width: 10rem;
 }
 
 .input-box-cadastro-pf input {
@@ -308,7 +310,7 @@
 }
 
 .titulo-login-cadastro-pf {
-   width: 600px;
+   width: 200px;
    margin-bottom: 0.4rem;
    color: #000;
 
@@ -320,8 +322,9 @@
 }
 
 #confirmacao-entrada-cadastro-pf div {
-   flex: 1 1 500rem;
+   flex: 1 1 200rem;
    margin: 5px;
+   min-width: 10rem;
 }
 
 #confirmacao-entrada input {
@@ -789,4 +792,33 @@ div#caixa-de-contato h2 {
    margin: 0.6rem 0;
    padding: 0.8rem 1.2rem;
 
+}
+
+/*--------------------------------------------------------*/
+/* .input-box-cadastro-pf--invalido {
+   margin-bottom: 0.5rem;
+}
+
+.input-box-cadastro-pf--invalido .input {
+   border: 1px solid var(--cor-aviso);
+   border-radius: 7px;
+}
+
+.input-box-cadastro-pf--invalido .input-label {
+   color: var(--cor-aviso);
+} */
+
+/* .textarea-mensagem-erro {
+   display: none;
+} */
+
+.mensagem-erro .textarea-mensagem-erro{
+   display: block;
+   color: red;
+   margin-top: 0.5rem;
+   padding-left: 0.5rem;
+}
+.erro{
+   border: 0.1rem dashed red;
+   color: red;
 }

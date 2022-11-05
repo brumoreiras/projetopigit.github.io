@@ -35,7 +35,7 @@
                     <img src="/img/undraw_having_fun_re_vj4h.svg" alt="imagem apresentação">
                 </div>
             </div>
-            
+
             <div class="form-posicionar">
                 <div class="form">
                     <form action="#">
@@ -54,7 +54,7 @@
                             <div class="input-box">
                                 <label for="razao-social">Razão social</label>
                                 <input type="text" name="razao-social" id="razao-social"
-                                    placeholder="Digite sua razão social" required>
+                                    placeholder="Digite sua razão social" data-tipo="firstname" required>
                             </div>
 
                             <div class="input-box">
@@ -121,8 +121,8 @@
 
                                 <div class="input-box">
                                     <label for="email">Confirme seu e-mail</label>
-                                    <input type="email" name="email" id="email" placeholder="Digite confirme seu e-mail"
-                                        required>
+                                    <input type="email" name="email" id="email-confirmacao"
+                                        placeholder="Digite confirme seu e-mail" required>
                                 </div>
 
                                 <!--Criar no javascript uma validação de caracteres de senha-->
@@ -130,13 +130,17 @@
                                 <div class="input-box">
                                     <label for="password">Crie uma senha</label>
                                     <input type="password" name="password" id="password" placeholder="Digite uma senha"
+                                        pattern="^(?=.*[a-z])(?=.*[A-Z])(?=.*[0-9])(?!.*[ !@#$%^¨&*_=+-]).{6,12}$"
+                                        title="A senha deve conter entre 6 à 8 caracteres, deve conter pelo menos uma letra maiúscula, um número, não deve conter caractere especial."
                                         required>
                                 </div>
 
                                 <div class="input-box">
                                     <label for="confirme-password">Confirme sua senha</label>
                                     <input type="password" name="confirme-password" id="confirme-password"
-                                        placeholder="Digite confirme sua senha" required>
+                                        placeholder="Digite confirme sua senha"
+                                        pattern="^(?=.*[a-z])(?=.*[A-Z])(?=.*[0-9])(?!.*[ !@#$%^¨&*_=+-]).{6,12}$"
+                                        required>
                                 </div>
                             </div>
 
@@ -153,6 +157,9 @@
         </main>
 
     </section>
+    <script src="/jScript/app.js" type="module">
+
+    </script>
 </body>
 
 </html>

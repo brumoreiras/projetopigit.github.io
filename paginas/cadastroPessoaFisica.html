@@ -30,7 +30,7 @@
         <main class="conteudo-principal">
 
             <section class="first-section-cadastro-pf">
-<!--
+                <!--
                 <div class="posicao" >
                     <h1>Descubra o que esta acontecendo a sua volta.</h1>
                     <p>Ao se cadastrar você terá acesso de tudo que está rolando a sua volta, e acesso também aos
@@ -44,7 +44,7 @@
                     <img src="/img/undraw_world_re_768g.svg" alt="globo-terrestre">
                 </div>
             </section>
-            
+
             <section class="second-section-cadastro-pf">
                 <div class="form-cadastro-pf">
                     <form action="#">
@@ -62,27 +62,34 @@
 
                             <div class="input-box-cadastro-pf">
                                 <label for="firstname">Nome</label>
+
                                 <input type="text" name="firstname" id="firstname" placeholder="Digite seu nome"
-                                    required>
+                                    data-tipo="firstname" required>
+                                <span class="mensagem-erro"></span>
+
                             </div>
 
                             <div class="input-box-cadastro-pf">
                                 <label for="lasname">Sorenome</label>
                                 <input type="text" name="lasname" id="lasname" placeholder="Digite seu último nome"
-                                    required>
+                                    data-tipo="lasname" required>
+                                    <span class="mensagem-erro"></span>
                             </div>
 
                             <div class="input-box-cadastro-pf">
                                 <label for="telefone">Telefone</label>
                                 <input type="number" name="telefone" id="telefone" placeholder="(xx) xxxxx-xxxx"
-                                    required>
+                                    data-tipo="telefone" required>
+                                    <span class="mensagem-erro"></span>
                             </div>
 
 
 
                             <div class="input-box-cadastro-pf">
                                 <label for="data-nascimento">Data de nascimento</label>
-                                <input type="date" name="data-nascimento" id="data-nascimento" required>
+                                <input type="date" name="data-nascimento" id="data-nascimento"
+                                    data-tipo="dataNascimento" required>
+                                    <span class="mensagem-erro"></span>
                             </div>
                             <!--Criei uma div que envolve a validação de login 
                             
@@ -96,13 +103,15 @@
                                 <div class="input-box-cadastro-pf">
                                     <label for="email">E-mail</label>
                                     <input type="email" name="email" id="email" placeholder="Digite seu e-mail"
-                                        required>
+                                        data-tipo="email" required>
+                                        <span class="mensagem-erro"></span>
                                 </div>
 
                                 <div class="input-box-cadastro-pf">
                                     <label for="email">Confirme seu e-mail</label>
-                                    <input type="email" name="email" id="email" placeholder="Digite confirme seu e-mail"
-                                        required>
+                                    <input type="email" name="email" id="confirme-email"
+                                        placeholder="Digite confirme seu e-mail" data-tipo="confirmeEmail" required>
+                                        <span class="mensagem-erro"></span>
                                 </div>
 
                                 <!--Criar no javascript uma validação de caracteres de senha-->
@@ -110,18 +119,20 @@
                                 <div class="input-box-cadastro-pf">
                                     <label for="password">Crie uma senha</label>
                                     <input type="password" name="password" id="password" placeholder="Digite uma senha"
-                                        required>
+                                        data-tipo="password" pattern="^(?=.*[a-z])(?=.*[A-Z])(?=.*[0-9])(?!.*[ !@#$%^¨&*_=+-]).{6,12}$" required>
+                                        <span class="mensagem-erro"></span>
                                 </div>
 
                                 <div class="input-box-cadastro-pf">
                                     <label for="confirme-password">Confirme sua senha</label>
                                     <input type="password" name="confirme-password" id="confirme-password"
-                                        placeholder="Digite confirme sua senha" required>
+                                        placeholder="Digite confirme sua senha" data-tipo="confirmePassword" pattern="^(?=.*[a-z])(?=.*[A-Z])(?=.*[0-9])(?!.*[ !@#$%^¨&*_=+-]).{6,12}$" required>
+                                        <span class="mensagem-erro"></span>
                                 </div>
                             </div>
 
                             <div class="botao-concluir-cadastro-pf">
-                                <button><a href="#">Concluir cadastro</a></button>
+                                <button a href="#">Concluir cadastro</a></button>
                             </div>
 
 
@@ -134,6 +145,7 @@
 
         </main>
     </section>
+    <script src="/jScript/app.js" type="module"></script>
 </body>
 
 </html>
