@@ -1,0 +1,187 @@
+@import "/style/estilo.css";
+@import "/style/cadastroPessoaFisica.css";
+@import "/style/cadastroPessoaJuridica.css";
+@import "/style/contato.css";
+@import "/style/opcoesDeCadastro.css";
+
+/*Estilização pagina contato */
+.first-section {
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+ 
+ }
+ 
+ #form-contato {
+    width: 30rem;
+    height: 70vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-color: #fff;
+    padding: 3rem;
+    border-radius: 30px;
+    height: 90%;
+    margin-top: 0.8rem;
+    border: 0.1px solid rgba(0, 0, 0, .2);
+    box-shadow: 5px 3px 3px 5px rgba(0, 0, 0, .2);
+ }
+ 
+ .form-header-contato {
+    margin-bottom: 1rem;
+ }
+ 
+ .form-header-contato h1 {
+    font-size: 22px;
+ }
+ 
+ .form-header-contato h1::after {
+    content: '';
+    display: block;
+    width: 5rem;
+    height: 0.3rem;
+    background-color: #4466EA;
+    margin: 0 auto;
+    position: absolute;
+    border-radius: 10px;
+ }
+ 
+ .input-group-form {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 1rem 0;
+    justify-content: center;
+ }
+ 
+ .input-box-form {
+    /*border: 3px dashed black;*/
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    margin-bottom: 1.1rem;
+    width: 25rem;
+ }
+ 
+ .input-box-form input {
+    margin: 0.6rem 0;
+    padding: 0.8rem 1.2rem;
+    border: none;
+    border-radius: 10px;
+    box-shadow: 1px 1px 6px #0000001c;
+ 
+ }
+ 
+ .input-box-form input:hover {
+    background-color: #eeeeee75;
+ }
+ 
+ .input-box-form label {
+    font-size: 1rem;
+    font-weight: 600;
+    color: #000000c0;
+ }
+ 
+ .input-box-form input::placeholder {
+    color: #000000be;
+ }
+ 
+ input#box-menssagem {
+    height: 15vh;
+    max-height: 100vh;
+ }
+ 
+ input#box-menssagem::placeholder {
+    position: absolute;
+ }
+ 
+ .botao-concluir-form button {
+    width: 20rem;
+    margin-top: 2rem;
+    background-color: #4466EA;
+    padding: 0.62rem;
+    border-radius: 5px;
+    cursor: pointer;
+    align-items: center;
+ 
+ }
+ 
+ .botao-concluir-form a {
+    text-decoration: none;
+    color: #fff;
+    padding: 3rem;
+    font-size: 18px;
+ }
+ 
+ .second-section {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    color: #fff;
+ }
+ 
+ div#caixa-de-contato {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+ }
+ 
+ div#caixa-de-contato h1 {
+    width: 40rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-size: 32px;
+    font-family: 'Inter', sans-serif;
+    font-weight: 700;
+    letter-spacing: 5px;
+ 
+ }
+ 
+ div#caixa-de-contato h2 {
+ 
+    width: 400px;
+    font-family: 'Inter', sans-serif;
+    text-align: left;
+    font-weight: 200;
+    letter-spacing: 4px;
+ }
+ 
+ .informacao-de-contato {
+    padding: 20px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 20px;
+ 
+ }
+ 
+ .informacao-de-contato div {
+ 
+    width: 300px;
+ }
+ 
+ .informacao-de-contato img {
+    color: #fff;
+    align-items: baseline;
+ 
+ }
+ 
+ .informacao-de-contato h3 {
+    font-family: 'Inter', sans-serif;
+    font-weight: bold 100;
+    align-self: flex-start;
+    align-items: baseline;
+ }
+ 
+ .informacao-de-contato p {
+    align-items: baseline;
+    font-family: 'Inter', sans-serif;
+    font-weight: 100;
+    align-self: flex-start;
+ 
+ }

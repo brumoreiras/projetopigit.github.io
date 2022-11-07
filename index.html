@@ -7,6 +7,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style/estilo.css">
+    
     <title>iExplore</title>
 </head>
 
@@ -26,7 +27,7 @@
                     <a class="menu-bar-item" href="/index.html">Sobre</a>
                     <a class="menu-bar-item" href="/paginas/contato.html">Contato</a>
                     <a class="menu-bar-item" href="/index.html">Login</a>
-                    <img src="/img/align-justify.png" alt="menu-list">
+                   <!--  <img src="/img/align-justify.png" alt="menu-list"> -->
                 </nav>
 
             </header>
@@ -62,13 +63,13 @@
                                 <div class="input-box-login">
                                     <label for="password">Usuário</label>
                                     <input type="password" name="password" id="password" placeholder="Digite seu e-mail"
-                                        required>
+                                       data-tipo="emailLogin" required>
                                 </div>
 
                                 <div class="input-box-login">
                                     <label for="confirme-password">Senha</label>
                                     <input type="password" name="confirme-password" id="confirme-password"
-                                        placeholder="Digite sua senha" required>
+                                    data-tipo="senhaLogin" placeholder="Digite sua senha" required>
                                 </div>
                             </div>
                             <div class="lembretes">
@@ -93,7 +94,7 @@
             
             </main>
         </section>
-        <script src="/jScript/script.js" type="model"></script>
+        <script src="/jScript/main.js" ></script>
     </body>
 
 </html>

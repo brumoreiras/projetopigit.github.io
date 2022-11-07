@@ -5,7 +5,9 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="/style/estilo.css">
+    <link rel="stylesheet" href="/style/cadastroPessoaJuridica.css">
+    <link rel="stylesheet" href="style/estilo.css">
+
     <title>iExplore</title>
 </head>
 
@@ -23,7 +25,7 @@
                 <a class="menu-bar-item" href="/index.html">Sobre</a>
                 <a class="menu-bar-item" href="/paginas/contato.html">Contato</a>
                 <a class="menu-bar-item" href="/index.html">Login</a>
-                <img src="/img/align-justify.png" alt="menu-list">
+                <!-- <img src="/img/align-justify.png" alt="menu-list"> -->
             </nav>
 
         </header>
@@ -54,58 +56,96 @@
                             <div class="input-box">
                                 <label for="razao-social">Razão social</label>
                                 <input type="text" name="razao-social" id="razao-social"
-                                    placeholder="Digite sua razão social" data-tipo="firstname" required>
+                                    placeholder="Digite sua razão social" data-tipo="razaoSocial" required>
+                                <span class="mensagem-erro"></span>
                             </div>
 
                             <div class="input-box">
                                 <label for="cnpj">CNPJ</label>
-                                <input type="number" name="cnpj" id="cnpj" placeholder="xx.xxx.xxx/xxxx-xx" required>
-                            </div>
-
-                            <div class="input-box">
-                                <label for="endereco">Endereço</label>
-                                <input type="text" name="endereco" id="endereco"
-                                    placeholder="Digite o endereço do estabelecimeto" required>
-                            </div>
-
-                            <div class="input-box">
-                                <label for="cep">CEP</label>
-                                <input type="number" name="cep" id="cep" placeholder="Digite o CEP" required>
-                            </div>
-
-                            <div class="input-box">
-                                <label for="bairro">Bairro</label>
-                                <input type="text" name="bairro" id="bairro" placeholder="Digite o bairro" required>
-                            </div>
-
-                            <div class="input-box">
-                                <label for="cidade">Cidade</label>
-                                <input type="text" name="cidade" id="cidade" placeholder="Digite o cidade" required>
-                            </div>
-
-                            <div class="input-box">
-                                <label for="estado">Estado</label>
-                                <input type="text" name="estado" id="estado" placeholder="Digite o estado" required>
+                                <input type="text" name="cnpj" id="cnpj" placeholder="xx.xxx.xxx/xxxx-xx"
+                                    data-tipo="cnpj" pattern="/^(\d{2}\.?\d{3}\.?\d{3}\/?\d{4}-?\d{2})$/" required>
+                                <span class="mensagem-erro"></span>
                             </div>
 
                             <div class="input-box">
                                 <label for="tel">Telefone</label>
-                                <input type="number" name="tel" id="tel" placeholder="(xx) xxxxx-xxxx" required>
+                                <input type="text" name="tel" id="tel" placeholder="(xx) xxxxx-xxxx"
+                                    data-tipo="telefone" pattern="^\(-?\\d{2}\)-?\d{1}-?\d{4}\-\-?\d{4}$" required>
+                                <span class="mensagem-erro"></span>
                             </div>
+
+                            <div class="titulo-login">
+                                <h3>Endereço</h3>
+                            </div>
+
+                            <div class="input-box">
+                                <label for="cep">CEP</label>
+                                <input type="text" name="cep" id="cep" placeholder="Digite o CEP"
+                                    pattern="[\d]{5}-?[\d]{3}" data-tipo="cep" required>
+                                <span class="mensagem-erro"></span>
+                            </div>
+
+                            <div class="input-box">
+                                <label for="endereco">Endereço</label>
+                                <input type="text" name="endereco" id="endereco" data-tipo="logradouro"
+                                    placeholder="Digite o endereço do estabelecimeto" required>
+                                <span class="mensagem-erro"></span>
+                            </div>
+
+                            <div class="input-box">
+                                <label for="bairro">Bairro</label>
+                                <input type="text" name="bairro" id="bairro" placeholder="Digite o bairro"
+                                    data-tipo="bairro" required>
+                                <span class="mensagem-erro"></span>
+                            </div>
+
+                            <div class="input-box">
+                                <label for="cidade">Cidade</label>
+                                <input type="text" name="cidade" id="cidade" placeholder="Digite o cidade"
+                                    data-tipo="cidade" required>
+                                <span class="mensagem-erro"></span>
+                            </div>
+
+                            <div class="input-box">
+                                <label for="estado">Estado</label>
+                                <input type="text" name="estado" id="estado" placeholder="Digite o estado"
+                                    data-tipo="estado" required>
+                                <span class="mensagem-erro"></span>
+                            </div>
+
+
 
                             <div class="input-box">
                                 <label for="tipo-servico">Tipo de serviço</label>
                                 <input type="text" name="tipo-servico" id="tipo-servico"
-                                    placeholder="Qual é o ramo da sua empresa?" required>
+                                    placeholder="Qual é o ramo da sua empresa?" data-tipo="sevico" required>
+                                <span class="mensagem-erro"></span>
+                            </div>
+
+                            <div class="titulo-login">
+                                <h3>Horário de atendimento</h3>
                             </div>
 
                             <div class="input-box">
-                                <label for="horario">Horário de atendimento</label>
-                                <input type="text" name="horario" id="horario" placeholder="Qual é o de atendimento?"
-                                    required>
+                                <label for="horario">Horário de abertura</label>
+                                <input type="time" name="horario" id="horario" placeholder="Qual é o de atendimento?"
+                                    data-tipo="horarioAtendimento" required>
+                                <span class="mensagem-erro"></span>
                             </div>
-                            <!--Criei uma div que envolve a validação de login 
-                        
+                            <div class="input-box">
+                                <label for="horario">Horário de fechamento</label>
+                                <input type="time" name="horario" id="horario2" placeholder="Qual é o de atendimento?"
+                                    data-tipo="horarioAtendimento2" required>
+                                <span class="mensagem-erro"></span>
+                            </div>
+                            <div class="input-box">
+                                <label for="horario">Dias da semana</label>
+                                <input type="week" name="horario" id="horario1" placeholder="Qual é o de atendimento?"
+                                    data-tipo="horarioAtendimento1" required>
+                                <span class="mensagem-erro"></span>
+                            </div>
+
+                            <!-- Preciso criar um campo validando os dias da semana. seg. ter. qua. qui. sex. sab. dom.
                         -->
                             <div class="titulo-login">
                                 <h3>Criar usuário e senha</h3>
@@ -116,13 +156,15 @@
                                 <div class="input-box">
                                     <label for="email">E-mail</label>
                                     <input type="email" name="email" id="email" placeholder="Digite seu e-mail"
-                                        required>
+                                        data-tipo="email" required>
+                                    <span class="mensagem-erro"></span>
                                 </div>
 
                                 <div class="input-box">
                                     <label for="email">Confirme seu e-mail</label>
                                     <input type="email" name="email" id="email-confirmacao"
-                                        placeholder="Digite confirme seu e-mail" required>
+                                        placeholder="Digite confirme seu e-mail" data-tipo="confirmeEmail" required>
+                                    <span class="mensagem-erro"></span>
                                 </div>
 
                                 <!--Criar no javascript uma validação de caracteres de senha-->
@@ -132,7 +174,8 @@
                                     <input type="password" name="password" id="password" placeholder="Digite uma senha"
                                         pattern="^(?=.*[a-z])(?=.*[A-Z])(?=.*[0-9])(?!.*[ !@#$%^¨&*_=+-]).{6,12}$"
                                         title="A senha deve conter entre 6 à 8 caracteres, deve conter pelo menos uma letra maiúscula, um número, não deve conter caractere especial."
-                                        required>
+                                        data-tipo="password" required>
+                                    <span class="mensagem-erro"></span>
                                 </div>
 
                                 <div class="input-box">
@@ -140,7 +183,8 @@
                                     <input type="password" name="confirme-password" id="confirme-password"
                                         placeholder="Digite confirme sua senha"
                                         pattern="^(?=.*[a-z])(?=.*[A-Z])(?=.*[0-9])(?!.*[ !@#$%^¨&*_=+-]).{6,12}$"
-                                        required>
+                                        data-tipo="confirmePassword" required>
+                                    <span class="mensagem-erro"></span>
                                 </div>
                             </div>
 
@@ -157,7 +201,7 @@
         </main>
 
     </section>
-    <script src="/jScript/app.js" type="module">
+    <script src="/jScript/main.js" ></script>
 
     </script>
 </body>

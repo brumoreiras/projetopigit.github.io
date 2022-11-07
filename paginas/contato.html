@@ -6,6 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="/style/estilo.css">
+    <link rel="stylesheet" href="/style/contato.css">
     <title>iExplore</title>
 </head>
 
@@ -23,7 +24,7 @@
                 <a class="menu-bar-item" href="/index.html">Sobre</a>
                 <a class="menu-bar-item" href="/paginas/contato.html">Contato</a>
                 <a class="menu-bar-item" href="/index.html">Login</a>
-                <img src="/img/align-justify.png" alt="menu-list">
+               <!--  <img src="/img/align-justify.png" alt="menu-list"> -->
             </nav>
 
         </header>
@@ -45,26 +46,31 @@
                             <div class="input-box-form">
                                 <label for="firstname">Nome Completo</label>
                                 <input type="text" name="firstname" id="firstname" placeholder="Digite seu nome"
-                                    required>
+                                data-tipo="nome" required>
+                                <span class="mensagem-erro"></span>
                             </div>
                             <div class="input-box-form">
                                 <label for="telefone">Telefone</label>
-                                <input type="number" name="telefone" id="telefone" placeholder="(xx)xxxxx-xxxx"
-                                    maxlength="11" required>
+                                <input type="text" name="telefone" id="telefone" placeholder="(xx)xxxxx-xxxx"
+                                    maxlength="11" data-tipo="telefone" required>
+                                    <span class="mensagem-erro"></span>
                             </div>
                             <div class="input-box-form">
                                 <label for="email">E-mail</label>
-                                <input type="email" name="email" id="email" placeholder="Digite seu e-mail" required>
+                                <input type="email" name="email" id="email" placeholder="Digite seu e-mail" data-tipo="email" required>
+                                <span class="mensagem-erro"></span>
                             </div>
                             <div class="input-box-form">
                                 <label for="assunto">Assunto</label>
                                 <input type="text" name="assunto" id="assunto"
-                                    placeholder="Digite o assunto que deseja tratar" required>
+                                    placeholder="Digite o assunto que deseja tratar" data-tipo="assunto" required>
+                                    <span class="mensagem-erro"></span>
                             </div>
                             <div class="input-box-form">
                                 <label for="box-menssagem">Menssagem</label>
                                 <input type="text" name="box-text" id="box-menssagem" placeholder="Digite uma mensagem"
-                                    required>
+                                    maxlength="350" data-tipo="mensagemBox" required>
+                                    <span class="mensagem-erro"></span>
                             </div>
 
                             <div class="botao-concluir-form">
@@ -109,7 +115,7 @@
             </section>
         </main>
     </section>
-    <script src="/jScript/main.js" type="model"></script>
+    <script src="/jScript/main.js" ></script>
 </body>
 
 </html>

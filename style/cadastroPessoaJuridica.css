@@ -1,0 +1,192 @@
+@import "/style/estilo.css";
+@import "/style/cadastroPessoaFisica.css";
+@import "/style/cadastroPessoaJuridica.css";
+@import "/style/contato.css";
+@import "/style/opcoesDeCadastro.css";
+/* Estilização pagina cadastroPJ */
+/* .estilizado {
+   background-image: radial-gradient(circle, rgb(27, 28, 133) 7%, rgba(3, 55, 163, 1) 45%, rgba(176, 182, 227, 1) 100%);
+   width: 100%;
+   height: 115vh;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+} */
+
+.principal {
+    background-color: white;
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, .212);
+   /*  border-radius: 30px; */
+    background-image: linear-gradient(to left, #4466EA 70%, #4466EA 0, #f0f5ff 30%);
+    /* margin: 5rem; */
+ }
+ 
+ .icone-menu img {
+    height: 4.5rem;
+    padding: 1rem;
+ }
+ 
+ .menu-header {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    width: 100%;
+    height: 4.5rem;
+    padding: 2rem;
+    border-bottom: 2px solid #d8d3ed;
+ 
+ }
+ 
+ .menu-bar {
+    display: flex;
+    flex-direction: row;
+    gap: 42px;
+ }
+ 
+ .menu-bar-item {
+    font-family: 'Sarala', sans-serif;
+    color: #fff;
+    text-decoration: none;
+    font-weight: 400px;
+    font-size: 15px;
+ 
+ }
+ 
+ .conteudo-principal {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+ 
+ }
+ 
+ .teste {
+    width: 35%;
+    position: relative;
+    margin-top: 3rem;
+    order: 2;
+ }
+ 
+ .image {
+    height: 30px;
+ }
+ 
+ 
+ .form-posicionar {
+    display: flex;
+    justify-content: center;
+ }
+ 
+ .form {
+    border: 3px dashed black;
+    width: 70%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-color: #fff;
+    padding: 3rem;
+    border-radius: 30px;
+    height: 90%;
+    margin-top: 1.5rem;
+    border: 0.1px solid rgba(0, 0, 0, .2);
+    box-shadow: 5px 3px 3px 5px rgba(0, 0, 0, .2);
+    order: 1;
+ }
+ 
+ .form-header {
+    margin-bottom: 1.5rem;
+ }
+ 
+ .form-header h1::after {
+    content: '';
+    display: block;
+    width: 5rem;
+    height: 0.3rem;
+    background-color: #4466EA;
+    margin: 0 auto;
+    position: absolute;
+    border-radius: 10px;
+ }
+ 
+ .input-group {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-self: flex-start;
+    padding: 1rem 0;
+ 
+ }
+ 
+ .input-box {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 1.1rem;
+    width: 15rem;
+ }
+ 
+ .input-box input {
+    margin: 0.6rem 0;
+    padding: 0.8rem 1.2rem;
+    border: none;
+    border-radius: 10px;
+    box-shadow: 1px 1px 6px #0000001c;
+ 
+ }
+ 
+ .input-box input:hover {
+    background-color: #eeeeee75;
+ }
+ 
+ .input-box label {
+    font-size: 1rem;
+    font-weight: 600;
+    color: #000000c0;
+ }
+ 
+ .input-box input::placeholder {
+    color: #000000be;
+ }
+ 
+ .botao-concluir button {
+    width: 800px;
+    margin-top: 2rem;
+    background-color: #4466EA;
+    padding: 0.62rem;
+    border-radius: 5px;
+    cursor: pointer;
+ }
+ 
+ .botao-concluir a {
+    text-decoration: none;
+    color: #fff;
+    padding: 2rem;
+ }
+ 
+ .titulo-login {
+    width: 600px;
+    margin-bottom: 1rem;
+ 
+ }
+ 
+ #confirmacao-entrada {
+    display: flex;
+    flex-wrap: wrap;
+ }
+ 
+ #confirmacao-entrada div {
+    flex: 1 1 20rem;
+    margin: 5px;
+ }
+ 
+ #confirmacao-entrada input {
+    margin: 0.6rem 0;
+    padding: 0.8rem 1.2rem;
+ 
+ }
+ 
