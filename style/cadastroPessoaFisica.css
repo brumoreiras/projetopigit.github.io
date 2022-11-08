@@ -1,157 +1,184 @@
-
 @import "/style/estilo.css";
 @import "/style/cadastroPessoaFisica.css";
-@import "/style/cadastroPessoaJuridica.css";
-@import "/style/contato.css";
-@import "/style/opcoesDeCadastro.css";
-/*Estilização pagina cadastro */
-.first-section-cadastro-pf {
 
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    color: #fff;
-    order: 2;
- }
+
+/*Estilização pagina cadastro */
+#principal {
+   height: auto;
+}
+
+.first-section-cadastro-pf {
+   width: 100%;
+   order: 2;
+}
+
+#caixa-de-informacao h1 {
+   font-size: 32px;
+   margin-bottom: 300px;
+  
+}
+.posicao {
+   display: block;
+   position: relative;
+   align-items: flex-start;
+   margin-bottom: 300px;
+}
+
+.imagem-cadastro-pf {
+   display: flex;
+   margin: 10rem auto;
+   justify-content: center;
+   width: 10rem;
+   height: 35rem;
+   margin-left: 13rem;
+
+}
+
+.second-section-cadastro-pf {
+   display: flex;
+   flex-direction: column;
+   color: #fff;
+}
+
+.form-cadastro-pf {
+   width: 70%;
+   display: flex;
+   flex-direction: column;
+   background-color: #fff;
+   padding: 3rem;
+   border-radius: 8px;
+   height: 76vh;
+   margin: 3rem auto;
+   border: 0.1px solid rgba(0, 0, 0, .2);
+   box-shadow: 5px 3px 3px 5px rgba(0, 0, 0, .2);
+   order: 1;
+   
+}
+
+.form-header-cadastro-pf {
+   font-family: 'Urbanist', sans-serif;
+   font-size: 36px;
+   font-weight: 800;
+   margin-bottom: 1.5rem;
+   color: #000;
+   /* font-size: 22px; */
+   padding: 0.2rem 0;
+}
+
+
+.form-header-cadastro-pf h1::after {
+   content: '';
+   display: block;
+   width: 5rem;
+   height: 0.3rem;
+   background-color: #4466EA;
+   margin: 0 auto;
+   position: absolute;
+   border-radius: 10px;
+}
+
+.input-group-cadastro-pf {
+   display: flex;
+   flex-wrap: wrap;
+   align-self: flex-start;
+   padding: 1rem 0;
+
+}
+
+.input-box-cadastro-pf {
+   display: flex;
+   flex-direction: column;
+   width: 23rem;
+   min-width: 10rem;
+}
+
+.input-box-cadastro-pf input {
+   width: 20rem;
+   height: 3rem;
+   margin: 0.3rem 0;
+   padding: 0.5rem 1rem;
+   border: none;
+   border-radius: 10px;
+   box-shadow: 1px 1px 6px #0000001c;
+   display: flex;
+}
+
+.input-box-cadastro-pf input:hover {
+   background-color: #eeeeee75;
+}
+
+.input-box-cadastro-pf label {
+   font-family: 'Inter', sans-serif;
+   font-size: 1rem;
+   font-weight: 600;
+   color: #000000c0;
+   padding: 0.1rem;
+}
+
+.input-box-cadastro-pf input::placeholder {
+   color: #000000be;
+}
+
+.botao-concluir-cadastro-pf button {
+   width: 93%;
+   height: 3rem;
+   font-family: 'Urbanist', sans-serif;
+   font-weight: 800;
+   font-size: 1.5rem;
+   margin-top: 0.5rem;
+   background-color: #4466EA;
+   padding: 0.2rem;
+   border-radius: 5px;
+   cursor: pointer;
+   letter-spacing: 0.2rem;
+   font-weight: 900;
  
- #caixa-de-informacao h1 {
-    font-size: 32px;
-    margin-bottom: 300px;
- }
- 
- .posicao {
- 
-    display: block;
-    position: relative;
-    align-items: flex-start;
-    margin-bottom: 300px;
- }
- 
- .imagem-cadastro-pf {
-    display: flex;
-    width: 80%;
- }
- 
- .second-section-cadastro-pf {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    color: #fff;
- }
- 
- .form-cadastro-pf {
-    width: 70%;
-    display: flex;
-    justify-content: center;
-    flex-direction: column;
-    background-color: #fff;
-    padding: 3rem;
-    border-radius: 30px;
-    height: 90%;
-    margin-top: 1.5rem;
-    border: 0.1px solid rgba(0, 0, 0, .2);
-    box-shadow: 5px 3px 3px 5px rgba(0, 0, 0, .2);
-    order: 1;
- }
- 
- .form-header-cadastro-pf {
-    margin-bottom: 1.5rem;
-    color: #000;
-    font-size: 22px;
-    padding: 1rem 0;
- }
- 
- .titulo-dados-cadastrais {
-    color: #000;
- }
- 
- .form-header-cadastro-pf h1::after {
-    content: '';
-    display: block;
-    width: 5rem;
-    height: 0.3rem;
-    background-color: #4466EA;
-    margin: 0 auto;
-    position: absolute;
-    border-radius: 10px;
- }
- 
- .input-group-cadastro-pf {
-    display: flex;
-    flex-wrap: wrap;
-    align-self: flex-start;
-    padding: 1rem 0;
-    gap: 0.9rem;
- 
- }
- 
- .input-box-cadastro-pf {
-    display: flex;
-    flex-direction: column;
-    margin-bottom: 1.1rem;
-    width: 20rem;
-    min-width: 10rem;
- }
- 
- .input-box-cadastro-pf input {
-    margin: 0.3rem 0;
-    padding: 0.5rem 1rem;
-    border: none;
-    border-radius: 10px;
-    box-shadow: 1px 1px 6px #0000001c;
- }
- 
- .input-box-cadastro-pf input:hover {
-    background-color: #eeeeee75;
- }
- 
- .input-box-cadastro-pf label {
-    font-size: 1rem;
-    font-weight: 600;
-    color: #000000c0;
- }
- 
- .input-box-cadastro-pf input::placeholder {
-    color: #000000be;
- }
- 
- .botao-concluir-cadastro-pf button {
-    width: 100%;
-    margin-top: 2rem;
-    background-color: #4466EA;
-    padding: 0.62rem;
-    border-radius: 5px;
-    cursor: pointer;
- }
- 
- .botao-concluir-cadastro-pf a {
-    text-decoration: none;
-    color: #fff;
-    padding: 2rem;
- }
- 
- .titulo-login-cadastro-pf {
-    width: 200px;
-    margin-bottom: 0.4rem;
-    color: #000;
- 
- }
- 
- #confirmacao-entrada-cadastro-pf {
-    display: flex;
-    flex-wrap: wrap;
- }
- 
- #confirmacao-entrada-cadastro-pf div {
-    flex: 1 1 200rem;
-    margin: 5px;
-    min-width: 10rem;
- }
- 
- #confirmacao-entrada input {
-    margin: 0.3rem 0;
-    padding: 0.5rem 1rem;
- 
- }
+}
+
+.botao-concluir-cadastro-pf a {
+   text-decoration: none;
+   color: #fff;
+   padding: 1rem;
+}
+
+.titulo-cadastro{
+   width: 100%;
+   display: block;
+   margin-bottom: 0.4rem;
+   color: #000;
+   font-family: 'Inter', sans-serif;
+   font-size: 1rem;
+   font-weight: 500;
+   padding: 0.5rem;
+
+}
+
+#confirmacao-entrada-cadastro-pf {
+   display: flex;
+   flex-wrap: wrap;
+
+}
+
+#confirmacao-entrada input {
+   flex: 1 1 20rem ;
+   margin: 0.3rem 0;
+   padding: 0.5rem 1rem;
+
+}
+
+/* ----------- Mensagem de erro ----------- */
+.mensagem-erro {
+   display: block;
+   color: red;
+   font-family: 'Inter', sans-serif;
+   font-size: 0.8rem;
+   font-weight: bold 100;
+   margin-top: 0.5rem;
+   padding-left: 0.5rem;
+   margin-bottom: 0.5rem;
+}
+
+.erro input {
+   border: 0.1rem solid red;
+
+}

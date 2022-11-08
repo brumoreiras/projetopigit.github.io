@@ -5,14 +5,15 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link  href="style/estilo.css">
     <link rel="stylesheet" href="/style/cadastroPessoaJuridica.css">
-    <link rel="stylesheet" href="style/estilo.css">
+    
 
     <title>iExplore</title>
 </head>
 
 <body class="estilizado">
-    <section class="principal">
+    <section class="principal" id="principal">
 
         <header class="menu-header">
 
@@ -33,9 +34,9 @@
         <main class="conteudo-principal">
 
             <div class="teste">
-                <div class="image">
+               <!--  <div class="image">
                     <img src="/img/undraw_having_fun_re_vj4h.svg" alt="imagem apresentação">
-                </div>
+                </div> -->
             </div>
 
             <div class="form-posicionar">
@@ -46,7 +47,7 @@
                             <h1>Cadastre-se</h1>
                         </div>
 
-                        <div class="titulo-dados-cadastrais">
+                        <div class="titulo-dados-cadastrais titulo-cadastro">
                             <h3>Dados cadastrais</h3>
 
                         </div>
@@ -74,7 +75,7 @@
                                 <span class="mensagem-erro"></span>
                             </div>
 
-                            <div class="titulo-login">
+                            <div class="titulo-login titulo-cadastro" >
                                 <h3>Endereço</h3>
                             </div>
 
@@ -122,7 +123,7 @@
                                 <span class="mensagem-erro"></span>
                             </div>
 
-                            <div class="titulo-login">
+                            <div class="titulo-login titulo-cadastro">
                                 <h3>Horário de atendimento</h3>
                             </div>
 
@@ -140,14 +141,14 @@
                             </div>
                             <div class="input-box">
                                 <label for="horario">Dias da semana</label>
-                                <input type="week" name="horario" id="horario1" placeholder="Qual é o de atendimento?"
+                                <input type="week" name="horario" id="" placeholder="Qual é o de atendimento?"
                                     data-tipo="horarioAtendimento1" required>
                                 <span class="mensagem-erro"></span>
                             </div>
 
                             <!-- Preciso criar um campo validando os dias da semana. seg. ter. qua. qui. sex. sab. dom.
                         -->
-                            <div class="titulo-login">
+                            <div class="titulo-login titulo-cadastro">
                                 <h3>Criar usuário e senha</h3>
                             </div>
 
@@ -188,13 +189,13 @@
                                 </div>
                             </div>
 
-                            <div class="botao-concluir">
-                                <button><a href="#">Concluir cadastro</a></button>
-                            </div>
+                            
 
 
                         </div>
-
+                        <div class="botao-concluir">
+                            <button><a href="#">Concluir cadastro</a></button>
+                        </div>
                     </form>
                 </div>
             </div>
