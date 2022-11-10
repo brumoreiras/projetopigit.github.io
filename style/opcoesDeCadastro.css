@@ -1,0 +1,125 @@
+@import "/style/estilo.css";
+@import "/style/opcoesDeCadastro.css";
+
+/*Estilização opções de cadastro*/
+.principal-op-cadastro {
+    background-color: white;
+    width: 90%;
+    height: auto;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, .212);
+    border-radius: 30px;
+    background-image: linear-gradient(to top, #f0f5ff 80%, #3B3BB8 0, #3B3BB8 20%);
+    margin: 5rem;
+ }
+
+ 
+ .conteudo-op-principal {
+    display: flex;
+    width: 100%;
+ }
+ 
+ .manipular-elementos {
+    /* width: 50%; */
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    margin-left: 15rem;
+    
+ }
+ .manipular-elementos h1{
+  /*  font-family: 'Urbanist', sans-serif;
+   font-size: 70px;
+   font-weight: 800; */
+
+  /*  text-align: center; */
+   color: #000;
+   font-family: "Urbanist", sans-serif;
+   font-size: 48px;
+   font-weight: 800;
+   /* margin-top: 100px; */
+   z-index: 2;
+ }
+ 
+ #conta-usuario {
+  
+    width: 45rem;
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 10rem;
+    font-size: 36px;
+    letter-spacing: 5px;
+ 
+ }
+ 
+ #conta-usuario a {
+    text-decoration: none;
+    color: #000;
+ 
+ }
+ 
+ #conta-usuario h1::after {
+    content: '';
+    display: block;
+    width: 20rem;
+    height: 0.3rem;
+    background-color: #3B3BB8;
+    margin: 0.5rem auto;
+    position: absolute;
+    border-radius: 10px;
+ }
+ 
+ #conta-empresa {
+ 
+    width: 45rem;
+    display: flex;
+    flex-direction: column;
+    font-size: 36px;
+    letter-spacing: 5px;
+ 
+ }
+ 
+ #conta-empresa a {
+    text-decoration: none;
+    color: #000;
+ 
+ }
+ 
+ #conta-empresa h1::after {
+    content: '';
+    display: block;
+    width: 20rem;
+    height: 0.3rem;
+    background-color: #3B3BB8;
+    margin: 0.5rem auto;
+    position: absolute;
+    border-radius: 10px;
+ }
+ 
+ .info-img {
+    width: 50%;
+    padding: 3rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+ }
+ 
+ /* ----------- Mensagem de erro ----------- */
+.mensagem-erro {
+   display: block;
+   color: red;
+   font-family: 'Inter', sans-serif;
+   font-size: 0.8rem;
+   font-weight:bold 100;
+   margin-top: 0.5rem;
+   padding-left: 0.5rem;
+}
+.erro input {
+   border: 0.1rem solid red;
+
+}

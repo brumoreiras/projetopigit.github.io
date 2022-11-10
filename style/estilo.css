@@ -1,11 +1,5 @@
-@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Comforter+Brush&family=Fruktur&family=Roboto&family=Roboto+Mono&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Comforter+Brush&family=Fruktur&family=Roboto&family=Roboto+Mono&family=Sarala&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Comforter+Brush&family=Fruktur&family=Roboto&family=Roboto+Mono&family=Sarala&family=Syne:wght@800&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Comforter+Brush&family=Fruktur&family=Inter&family=Roboto&family=Roboto+Mono&family=Sarala&family=Syne:wght@800&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Comforter+Brush&family=Fruktur&family=Inter:wght@200;400&family=Roboto&family=Roboto+Mono&family=Sarala&family=Syne:wght@800&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Comforter+Brush&family=Fruktur&family=Inter:wght@200;300;400&family=Roboto&family=Roboto+Mono&family=Sarala&family=Syne:wght@800&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Comforter+Brush&family=Fruktur&family=Inter:wght@200;300;400&family=Roboto&family=Roboto+Mono&family=Sarala&family=Syne:wght@800&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Comforter+Brush&family=Fruktur&family=Inter:wght@200;300;400&family=Roboto&family=Roboto+Mono&family=Sarala&family=Syne:wght@800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Comforter+Brush&family=Fruktur&family=Inter:wght@200;300;400&family=Roboto&family=Roboto+Mono&family=Sarala&family=Syne:wght@800&family=Urbanist:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
 * {
    padding: 0;
    margin: 0;
@@ -13,12 +7,10 @@
    box-sizing: border-box
 }
 
-:root {
+/* :root {
    --color: #D3D3D3;
    --text-importante: font-family: 'Syne', sans-serif;
-   /*font-weight: 800*/
    --title-h1eh2: font-family: 'Inter', sans-serif;
-   /*Para h2 usar um font-weight: 200 ou 300*/
    --paragrafos: font-family: 'Roboto Mono', monospace;
    --color: #f0f0f0;
    --color-backgroud1: #bbdeea;
@@ -26,453 +18,24 @@
    --color-font-paragrafo1: #1f2426;
    --color-font-paragrafo2: #000;
    --title-h1eh2: font-family: 'Inter', sans-serif;
-}
+} */
 
-body {
-  background-color: #F8F8F8;
-   /* background: linear-gradient(90.21deg, #4060E5 0.19%, #758FF9 99.84%);*/
-   /*background-color: #1E1E1E;*/
-
-}
-
-.container-principal {
-   border-radius: 30px;
-   /*background-image: linear-gradient(to right, #E0E0E0 0, #C0C0C0 40%, #B8B8B8 50%);*/
-   background-image: linear-gradient(to left, #4466EA 50%, #4466EA 0, #EFEFEF 50%);
-}
-
-.container-principal {
-   background-color: #E0E0E0;
-   /* border: 3px dashed black;*/
-   width: 90%;
-   height: 800px;
-   margin: 3.5% 0 0 5%;
-   box-shadow: 10px 10px 10px rgba(0, 0, 0.1, 0.2);
-
-}
-
-#top-pagina {
-   display: flex;
-   flex-direction: row;
-   align-items: center;
-   justify-content: space-around;
-   padding: 5px;
-   border-bottom: 0.5px solid white;
-
-}
-
-#top-pagina h1 {
-   font-family: 'Syne', sans-serif;
-   font-weight: 800;
-   font-size: 32px;
-   margin-bottom: 15px;
-}
-
-#top-pagina img {
-   width: 30px;
-   height: 30px;
-   align-items: center;
-   
-}
-
-.menu-bar {
-   display: flex;
-   gap: 42px;
-   align-items: center;
-   margin-left: 50%;
-}
-
-.menu-bar-item {
-   font-family: 'Sarala', sans-serif;
-   color: #EFEFEF;
-   text-decoration: none;
-   font-weight: 400px;
-   font-size: 15px;
-}
-
-.conteudo {
-   display: flex;
-}
-
-#primeira-secao {
-   /*border: 3px dashed yellow;*/
-   width: 50%;
-   height: 700px;
-   padding: 24px;
-   order: 2;
-}
-div#caixa-de-informacao{
-   display: flex;
-   flex-direction: column;
-   align-items: center;
-   margin-top: 20%;   
-}
-#primeira-secao h1{
-   font-size: 50px;
-   text-align: left;
-   margin: 0 10%;
-}
-#primeira-secao p{  
-   font-family: var(--paragrafos);
-   font-weight: bold 400;
-   font-size: 16px;
-   text-align: left;
-   padding: 20px;
-   margin:2% 8%;
-}
-
-#saiba-mais{
-   font-size: 16px;
-   width: 200px;
-   height: 40px;
-   border-radius: 10px;
-   
-}
-
-#segunda-secao {
-   /*border: 3px dashed black;*/
-   width: 50%;
-   height: 700px;
-   display: flex;
-   flex-direction: column;
-   align-items: center;
-   padding: 10%;
-   order: 1;
-}
-
-#segunda-secao h1 {
-   font-size: 22px;
-   font-family: 'Inter', sans-serif;
-   font-weight: 700;
-   margin: 0 0 15px;
-   letter-spacing: 5px;
-
-}
-
-.redefine-senha {
-   display: inline;  
-   padding: 12px 0 15px 0;
-   margin-left: 15px;
-   font-family: 'Inter', sans-serif;
-   font-size: 12px;
-   
-   
-}
-a#redefine{
-   padding-left: 200px;
-   text-decoration: none;
-}
-
-.cadastro {
-   font-size: 16px;
-   font-family: 'Sarala', sans-serif;
-   column-gap: 20px;
-   font-weight: 100;
-   text-decoration: none;
-   
-}
-
-.campo-login {
-   display: block;
-   width: 560px;
-   margin: 10px;
-   padding: 24px 16px 8px;
-   border: #C0C0C0  solid 2px;
-   border-radius: 15px;   
-}
-input#email, input#password{
-   padding: 20px;
-   color: #C8C8C8;
-}
-
-#botao-entrar {
-   font-family: Arial, Helvetica, sans-serif;
-   font-size: 18px;
-   font-weight: 300;
-   color: #EFEFEF;
-   background-color: #4466EA;
-   border-radius: 15px;
-   padding: 20px;
-   letter-spacing: 5px;
-   width: 560px;
-   margin: 50px 10px; 
-}
-#botao-entrar:hover{
-   transform: scale(0.98);
-}
-
-/*Estilização pagina cadastro */
-
-#segunda-secao-cadastro {
-   /* border: 3px dashed yellow;*/
-    width: 50%;
-    height: 700px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    padding: 10%;
-    order: 1;
-    padding: 5%;
- }
- #posicionar h1{
-    text-align: center;
-    font-size: 32px;
-    font-family: 'Inter', sans-serif;
-    font-weight: 700;
-    margin: 0 0 20px;
-    padding: 15px;
-    letter-spacing: 5px;
- }
- #caixa-de-entrada-de-dados p{
-   font-family: var(--paragrafos);
-   font-weight: 800;
-   font: bold;    
-   font-size: 16px;
-   
- }
-
- #caixa-de-entrada-de-dados{  
-   /*border: 3px dashed black;*/
-   width: 100vh;
-   height: auto;  
-   display: flex;
-   flex-direction: row;
-   flex-wrap: wrap;
-   gap: 10px 30px;
-   justify-content: center;
-   
-}
-
-.item-cadastro{
-   width: 300px;
-   height: 30px;
-   border: #C0C0C0  solid 2px;
-   border-radius: 5px;   
-}
- 
- #botao-concluir{  
-   background-color: #4466EA;
-   color:#EFEFEF ;
-   letter-spacing: 5px;
-   height: 50px;
-   margin-top: 100px;
-   padding: 12px;
-   border: #C0C0C0  solid 3px;
-   border-radius: 15px; 
-}
-/*Estilização opções de cadastro*/
-#container-principal-opcoes {
-   border-radius: 30px;
-   /*background-image: linear-gradient(to right, #E0E0E0 0, #C0C0C0 40%, #B8B8B8 50%);*/
-   
-   background-image: linear-gradient(to top, #EFEFEF 80%, #4466EA 0, #4466EA 20%);
-}
-#container-principal-opcoes {
-   background-color: #E0E0E0;
-   /* border: 3px dashed black;*/
-   width: 90%;
-   height: 800px;
-   margin: 3.5% 0 0 5%;
-   box-shadow: 10px 10px 10px rgba(0, 0, 0.1, 0.2);
-
-}
-#conta-usuario {
-   /*border: 3px dashed black;*/
-   width: 50%;
-   height: 100px;
-   display: flex;
-   flex-direction: column;
-   align-items: center;
-   padding: 10%; 
-   margin-top: 100px;
-   padding-bottom: 100px;
-   vertical-align: bottom;
-   letter-spacing: 1px;
-   
-
-}
-#conta-usuario a{
-   text-decoration: none;
-}
-.personaliza-usuario{
-   display: flex;
-   flex-direction: row;
-   gap: 5px;
-}
-.personaliza-usuario h1{
-   font-family: 'Inter', sans-serif;
-   color: 	#484848 ;
-   font-size: 30px;
-   font-weight: bold 200;
-   border-bottom: 2px solid 	#484848 ;
-   padding: 30px;
-   align-items: center;
-   /*border: 3px dashed black;  */
-}
-.personaliza-usuario img{
-   width: 35px;
-   align-items: center;
-}
-#conta-empresa {
-   /*border: 3px dashed black;*/
-   width: 50%;
-   height: 400px;
-   display: flex;
-   flex-direction: column;
-   align-items: center;
-   padding: 10%;     
-   margin-top: 100px;   
-   padding-bottom: 100px;
-   vertical-align: bottom;   
-   letter-spacing: 1px;
-   
-}
-#conta-empresa a{
-   text-decoration: none;
-}
-/*Estilização pagina contato */
-#primeira-secao-contato {
-   /*border: 3px dashed yellow;*/
-   width: 50%;
-   height: 700px;
-   padding: 24px;
-   order: 2;
-   color: #F8F8F8;
-}
-div#caixa-de-contato{
-   /*border: 3px dashed black;*/
-   display: flex;
-   flex-direction: column;
-   align-items: center;   
-   gap: 5px;  
-   margin-top: 60px;
-}
-div#caixa-de-contato h1{
-   /*border: 3px dashed black;   */
-   width: 400px;
-   display: flex;
-   flex-direction: column;
-   align-items: center;
-   gap: 32px;
-   padding: 20px;
-   font-size: 32px;
-   font-family: 'Inter', sans-serif;
-   font-weight: 700;
-   letter-spacing: 5px;
-   
-}
-div#caixa-de-contato h2{
-  /* border: 3px dashed black;   */
-   width: 400px;
-   font-family: 'Inter', sans-serif;
-   text-align: left;
-   font-weight: 200;
-   letter-spacing: 4px;
-}
-.informacao-de-contato{
-  /*border: 3px dashed black;*/
-   padding: 20px;
-   display: flex;
-   flex-direction: row; 
-   align-items: center;
-   gap: 20px;   
-
-}
-.informacao-de-contato div{
-  /* border: 3px dashed black;        */
-   width: 300px;
-}
-.informacao-de-contato img{
-  /* border: 3px dashed black;   */
-  align-items: baseline;
-      
-}
-.informacao-de-contato h3{
-  /* border: 3px dashed black;   */
-  font-family: 'Inter', sans-serif;
-   font-weight: bold 100;
-   align-self: flex-start;
-   align-items: baseline;
-      
-}
-.informacao-de-contato p{
-   /* border: 3px dashed black;   */
-   align-items: baseline;
-   font-family: 'Inter', sans-serif;
-    font-weight: 100;
-    align-self: flex-start;
-       
- }
-
-
-#formulario-contato{  
-   /*border: 3px dashed black;*/
-   width: 100vh;
-   height: auto;   
-   display: flex;
-   flex-direction: column;   
-   gap: 10px;
-   align-items: center;
-   justify-content: center;
-   
-}
-input::placeholder{
-   padding: 10px;
-}
-.item-formulario{
-   width: 350px;
-   height: 40px;
-   border: #C0C0C0  solid 2px;
-   border-radius: 5px;   
-}
-#box-menssagem{   
-   height: 200px;
-   
-}
-#box-menssagem::placeholder{
-   position: absolute;
-}
-#botao-formulario-contato{     
-   background-color: #4466EA;
-   color:#EFEFEF ;
-   letter-spacing: 5px;
-   height: 45px;
-   margin-top: 10px;
-   padding: 12px;
-   border: #C0C0C0  solid 3px;
-   border-radius: 15px; 
-}
-/* Estilização pagina cadastroPJ */
-.estilizado {
-   background-image: radial-gradient(circle, rgb(27, 28, 133) 7%, rgba(3,55,163,1) 45%, rgba(176,182,227,1) 100%);
-   width: 100%;
-   height: 115vh;
-   display: flex;
-   justify-content: center;
-   align-items: center;
-}
-
-/* aqui nesse container principal eu alterei 
-   width, height, display, box-shadow
-*/
-.principal{  
-   /* border: 3px dashed black;*/
+.principal {
    background-color: white;
-   width: 90%;
+   width: 100%;
    height: auto;
-   display: flex;
-   flex-direction: row;
-   flex-wrap: wrap;
-   box-shadow: 5px 5px 10px rgba(0, 0, 0, .212);
-   border-radius: 30px;
-   
+   background-image: linear-gradient(to left, #3B3BB8 70%, #3B3BB8 0, #f0f5ff 30%); 
 }
-.icone-menu img{
-   height: 4.5rem;
-   padding: 1rem;
+
+.icone-menu img {
+   height: 10rem;
+   padding: 3.3rem;
+   margin-left: 15rem;
+
 }
+
 .menu-header {
-   /*border: 3px dashed black;*/
+   /* position: fixed; */
    display: flex;
    flex-direction: row;
    justify-content: space-around;
@@ -481,146 +44,337 @@ input::placeholder{
    height: 4.5rem;
    padding: 2rem;
    border-bottom: 2px solid #d8d3ed;
+   gap: 2rem;
 
 }
 
 .menu-bar {
+   justify-content: space-between;
    display: flex;
    flex-direction: row;
-   gap: 42px;
+   gap: 7rem;
 }
 
 .menu-bar-item {
-   font-family: 'Sarala', sans-serif;
-   color: black;
+   /* font-family: 'Inter', sans-serif;
+   font-weight: 500;
+   font-size: 1.4rem;
+   color: #fff;
+   text-decoration: none; */
    text-decoration: none;
-   font-weight: 400px;
-   font-size: 15px;
+   color: #C7C7F5;
+   font-family: "Inter", sans-serif;
+   font-weight: 500;
+   transition: 0.2s;
+
 }
+
+.menu-bar-item:hover,
+.menu-bar-item:focus {
+   color: #E7E7F5;
+}
+
+/*------------ botao login ---------------*/
+
+.log {
+   width: 128px;
+   height: 29px;
+   transition: 0.25s;
+   background: #FFFFFF;
+   border: 0;
+   border-radius: 6px;
+   margin-right: 20rem;
+
+}
+
+.log:hover,
+.log:focus {
+   background-color: #3B3BB8;
+   border: 2px solid #FFF;
+}
+
+.log:hover a,
+.log:focus a {
+   color: #FFF;
+}
+
+.log a {
+   font-family: "Inter";
+   font-style: normal;
+   font-weight: 700;
+   font-size: 16px;
+   line-height: 19px;
+   color: #3B3BB8;
+   text-decoration: none;
+}
+
+/*------------ botao login ---------------*/
 
 .conteudo-principal {
-   /*border: 3px dashed black;*/
    display: flex;
    flex-direction: row;
-   
-  
-}
-
-.image {   
-   /*
-   border: 3px dashed black;
-   justify-content: center;
-   align-items: center;
-   */
-   width: 45%;
-   display: flex;    
-   padding: 1rem;
-   
-  
+   width: 100%;
 
 }
-/*O problema aqui está na imagem eu preciso descobrir o que é para poder ficar tudo enquadrado direito.*/
 
-.form {
-   /*border: 3px dashed black;*/
-   width: 50%;
-   display: flex;    
-   justify-content: center;
-   align-items: center;
+/* Estilização pagina de log */
+.first-section-login {
+  /* padding: 5rem; */
+   /* width: 50%; */
+   /* align-items: center; */
+   display: flex;
    flex-direction: column;
+   justify-content: center;
+   color: #fff;
+   order: 2;
+   margin-right: 11rem;
+}
+
+.alinhando {
+   display: flex;
+   flex-direction: column;
+   justify-content: center;
+   align-items: center;
+   /* margin-right: 5rem; */
+   padding: 2rem;
+   margin-bottom: 10rem;
+}
+
+.texto-informativo {
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+   justify-content: center;
+   padding: 2rem;
+   margin-bottom: 2rem;
+}
+
+.texto-informativo h1 {
+   width: 100%;
+  /*  border: dashed; */
+   text-align: center;
+   color: #fff;
+   font-family: "Urbanist", sans-serif;
+   font-size: 48px;
+   font-weight: 800;
+   margin-top: 100px;
+   z-index: 2;
+   /* padding: 2rem; */
+   /* text-align: center;
+   font-size: 80px;
+   width: 50rem; */
+   /* font-weight: 300; */
+
+}
+
+.texto-informativo p {
+   font-family: 'Inter', sans-serif;
+   text-align: center;
+   font-size: 22px;
+   font-weight: 500;
+   width: 40rem;
+  
+   padding: 2rem 0;
+   /* margin-left: 5rem; */
+}
+
+.second-section-login {
+
+   display: flex;
+   flex-direction: column;
+   width: 50%;
+   justify-content: center;
+   align-items: center;
+   padding: 7rem;
+   /* height: 100vh; */
+   /* color: #fff; */
+}
+
+.form-login {
+   width: 30rem;
+   /* height: 60vh; */
+   display: flex;
+   flex-direction: column;
+   /* flex-wrap: wrap; */
+   justify-content: center;
+   align-items: center;
    background-color: #fff;
    padding: 3rem;
-   border-radius: 30px;
-   height: 90%;
-   margin-top: 1.5rem;   
+   border-radius: 1rem;
    border: 0.1px solid rgba(0, 0, 0, .2);
    box-shadow: 5px 3px 3px 5px rgba(0, 0, 0, .2);
+   order: 1;
+   margin: 5rem 10rem;
 }
 
-.form-header {
-   margin-bottom: 1.5rem;
+.form-header-login {
+   margin-bottom: 2rem;
+   color: #000;
+   font-family: 'Urbanist', sans-serif;
+   font-size: 48px;
+   font-weight: 800;
+   text-align: center;
+   letter-spacing: 0.1rem;
+   padding: 0.2rem 0;
+
 }
 
-.form-header h1::after {
+.form-header-login h1::after {
    content: '';
    display: block;
-   width: 5rem;
+   width: 12rem;
    height: 0.3rem;
-   background-color: #4466EA;
-   margin: 0 auto;
+   background-color: #3B3BB8;
+   margin: 0 auto auto 6.5rem;
    position: absolute;
    border-radius: 10px;
 }
 
-.input-group {   
+.input-group-login {
    display: flex;
    flex-wrap: wrap;
-   justify-content: space-between;
-   align-self: flex-start;
    padding: 1rem 0;
-   
+   justify-content: center;
 }
 
-.input-box {
-   /*border: 3px dashed black;*/
+.input-box-login {
    display: flex;
    flex-direction: column;
-   margin-bottom: 1.1rem;
-   width: 15rem;
-   /*Estou estilizando daqui para baixo*/ 
+   flex-wrap: wrap;
+   margin-bottom: 1rem;
+   width: 25rem;
+
 }
 
-.input-box input {
-   margin: 0.6rem 0;
-   padding: 0.8rem 1.2rem;
+.input-box-login input {
+   /* width: 25rem;*/
+   height: 3.5rem;
+   margin: 0.3rem 0;
+   padding: 0.5rem 1rem;
    border: none;
-   border-radius: 10px;
+   border-radius: 8px;
    box-shadow: 1px 1px 6px #0000001c;
-   
 }
 
-.input-box input:hover{
+.input-box-login input:hover {
    background-color: #eeeeee75;
 }
 
-.input-box label{
+.input-box-login label {
+   font-family: 'Inter', sans-serif;
    font-size: 1rem;
    font-weight: 600;
    color: #000000c0;
-}
-.input-box input::placeholder{
-   color: #000000be;
+   /* padding: 1rem 0; */
 }
 
-.botao-concluir button{
-   width: 800px;
-   margin-top: 2rem;
-   background-color: #4466EA;
-   padding: 0.62rem;
-   border-radius: 5px;
-   cursor: pointer;   
+.input-box-login input::placeholder {
+   color: #000000be;
+   /*  position: absolute;
+   padding: 1rem;
+   font-size: 1rem; */
 }
-.botao-concluir a{
+
+.lembretes {
+   /* border: dashed; */
+   display: flex;
+   flex-direction: row;
+   justify-content: space-between;
+   font-family: 'Inter', sans-serif;
+   font-size: 1rem;
+   font-weight: 100;
+   gap: 9rem;
+}
+
+.lembretes a {
    text-decoration: none;
-   color: #fff;
+   font-size: bold 13px;
+   color: #000;
+}
+
+.entrar button {
+  /*  border: dashed; */
+   width: 30rem;
+   height: 3.5rem;
+   border: 0;
+   font-family: 'Urbanist', sans-serif;
+   font-weight: 800;
+   font-size: 22px;
+   background-color: #FFFFFF;
+   /* color: #3B3BB8; */
+   /* padding: 1rem; */
+   margin-bottom: 5rem;
+   border-radius: 5px;
+   cursor: pointer;
+   letter-spacing: 0.1rem;
+   transition: 0.25s;
+
+}
+
+.entrar a {
+   text-decoration: none;
+   color: #3B3BB8;
    padding: 2rem;
 }
-.titulo-login{
-   width: 600px;
-  /* border: 3px dashed black;*/
-   margin-bottom: 1rem;
-   
+.entrar:hover button, .entrar:focus button{
+   background-color: #3B3BB8;
+   border: 2px solid #FFF;
 }
-#confirmacao-entrada{  
-   display: flex;
-   flex-wrap: wrap;     
+.entrar:hover a, .entrar:focus a{
+  color: #FFF;
 }
-#confirmacao-entrada div{
-   flex: 1 1 20rem;
-   margin: 5px;              
+
+
+
+.entrar-login button {
+   width: 100%;
+   height: 3.5rem;
+   font-family: 'Urbanist', sans-serif;
+   font-weight: 800;
+   font-size: 22px;
+   margin-top: 2rem;
+   background-color: #3B3BB8;
+   /* padding: 0.80rem; */
+   border: 0;
+   border-radius: 5px;
+   cursor: pointer;
+   align-items: center;
+   letter-spacing: 0.1rem;
+   transition: 0.25s;
+
 }
-#confirmacao-entrada input{
-   margin: 0.6rem 0;
-   padding: 0.8rem 1.2rem;   
- 
+.entrar-login:hover button, .entrar-login:focus{
+   background-color: #FFF;
+   border: 3px solid #3B3BB8;
 }
+
+.entrar-login:hover a, .entrar-login:focus a{
+   color: #3B3BB8;
+}
+
+.entrar-login a {
+   text-decoration: none;
+   color: #fff;
+   /* padding: 2rem; */
+   letter-spacing: 0.4rem;
+}
+
+/* .entrar-login:hover{
+   padding: 1rem;
+} */
+
+/* ----------- Mensagem de erro ----------- */
+/* .mensagem-erro {
+   display: block;
+   color: red;
+   font-family: 'Inter', sans-serif;
+   font-size: 0.8rem;
+   font-weight: bold 100;
+   margin-top: 0.5rem;
+   padding-left: 0.5rem;
+}
+
+.erro input {
+   border: 0.1rem solid red;
+
+} */

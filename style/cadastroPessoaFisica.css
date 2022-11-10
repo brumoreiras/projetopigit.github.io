@@ -1,0 +1,212 @@
+@import "/style/estilo.css";
+@import "/style/cadastroPessoaFisica.css";
+
+
+/*Estilização pagina cadastro */
+/* #principal {
+   height: auto;
+}
+ */
+.first-section-cadastro-pf {
+   width: 100%;
+   order: 2;
+}
+
+#caixa-de-informacao h1 {
+   font-size: 32px;
+   margin-bottom: 300px;
+
+}
+
+.posicao {
+   display: block;
+   position: relative;
+   align-items: flex-start;
+   margin-bottom: 300px;
+}
+
+.imagem-cadastro-pf {
+   display: flex;
+   margin: 10rem auto;
+   justify-content: center;
+   width: 10rem;
+   height: 35rem;
+   /* margin-left: 13rem; */
+
+}
+
+.second-section-cadastro-pf {
+   width: 100%;
+   display: flex;
+   flex-direction: column;
+   color: #fff;
+   justify-content: center;
+   align-items: center;
+}
+
+.form-cadastro-pf {
+   width: 52.5rem;
+   display: flex;
+   flex-direction: column;
+   justify-content: center;
+   align-items: center;
+   background-color: #fff;
+   padding: 3rem;
+   border-radius: 8px;
+   height: auto;
+   /*  margin: 3rem auto; */
+   border: 0.1px solid rgba(0, 0, 0, .2);
+   box-shadow: 5px 3px 3px 5px rgba(0, 0, 0, .2);
+   order: 1;
+
+}
+
+.form-header-cadastro-pf {
+   font-family: 'Urbanist', sans-serif;
+   font-size: 48px;
+   letter-spacing: 0.1rem;
+   font-weight: 800;
+   margin-bottom: 1.5rem;
+   color: #000;
+   padding: 0.2rem 0;
+
+}
+
+
+.form-header-cadastro-pf h1::after {
+   content: '';
+   display: block;
+   width: 5rem;
+   height: 0.3rem;
+   background-color: #4466EA;
+   margin: 0 auto;
+   position: absolute;
+   border-radius: 10px;
+}
+
+.input-group-cadastro-pf {
+   display: flex;
+   flex-wrap: wrap;
+   align-self: flex-start;
+   padding: 1rem 0;
+
+}
+
+.input-box-cadastro-pf {
+   display: flex;
+   flex-direction: column;
+   width: 23rem;
+   min-width: 10rem;
+}
+
+.input-box-cadastro-pf input {
+   width: 22rem;
+   height: 3.5rem;
+   margin: 0.3rem 0;
+   padding: 0.5rem 1rem;
+   border: none;
+   border-radius: 10px;
+   box-shadow: 1px 1px 6px #0000001c;
+   display: flex;
+
+}
+
+.input-box-cadastro-pf input:hover {
+   background-color: #eeeeee75;
+}
+
+.input-box-cadastro-pf label {
+   font-family: 'Inter', sans-serif;
+   font-size: 1rem;
+   font-weight: 600;
+   color: #000000c0;
+   padding: 0.1rem;
+}
+
+.input-box-cadastro-pf input::placeholder {
+   color: #000000be;
+}
+
+.botao-concluir-cadastro-pf {
+   display: flex;
+   justify-content: center;
+}
+
+.botao-concluir-cadastro-pf button {
+   width: 90%;
+   height: 3.5rem;
+   font-family: 'Urbanist', sans-serif;
+   font-weight: 800;
+   font-size: 22px;
+   font-size: 1.5rem;
+   /* margin-top: 0.5rem; */
+   background-color: #3B3BB8;
+   /* padding: 0.2rem; */
+   /* padding: 0.80rem; */
+   border: 0;
+   border-radius: 5px;
+   cursor: pointer;
+   letter-spacing: 0.1rem;
+   transition: 0.25s;
+
+
+}
+
+.botao-concluir-cadastro-pf:hover button,
+.botao-concluir-cadastro-pf:focus {
+   background-color: #FFF;
+   border: 3px solid #3B3BB8;
+}
+
+.botao-concluir-cadastro-pf a {
+   text-decoration: none;
+   color: #fff;
+
+}
+
+.botao-concluir-cadastro-pf:hover a,
+.botao-concluir-cadastro-pf:focus a {
+   color: #3B3BB8;
+   padding: 1rem;
+}
+
+.titulo-cadastro {
+   width: 100%;
+   display: block;
+   margin-bottom: 0.4rem;
+   color: #000;
+   font-family: 'Inter', sans-serif;
+   font-size: 1rem;
+   font-weight: 500;
+   padding: 0.5rem;
+
+}
+
+#confirmacao-entrada-cadastro-pf {
+   display: flex;
+   flex-wrap: wrap;
+
+}
+
+#confirmacao-entrada input {
+   margin: 0.3rem 0;
+   padding: 0.5rem 1rem;
+
+}
+
+/* ----------- Mensagem de erro ----------- */
+.mensagem-erro {
+   display: block;
+   color: red;
+   font-family: 'Inter', sans-serif;
+   font-size: 0.8rem;
+   font-weight: bold 100;
+   margin-top: 0.5rem;
+   padding-left: 0.5rem;
+   margin-bottom: 0.5rem;
+}
+
+.erro input {
+   border: 0.1rem solid red;
+
+}
