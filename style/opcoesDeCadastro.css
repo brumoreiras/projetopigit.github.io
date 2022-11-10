@@ -11,7 +11,7 @@
     flex-wrap: wrap;
     box-shadow: 5px 5px 10px rgba(0, 0, 0, .212);
     border-radius: 30px;
-    background-image: linear-gradient(to top, #f0f5ff 80%, #4466EA 0, #4466EA 20%);
+    background-image: linear-gradient(to top, #f0f5ff 80%, #3B3BB8 0, #3B3BB8 20%);
     margin: 5rem;
  }
 
@@ -22,7 +22,8 @@
  }
  
  .manipular-elementos {
-    width: 50%;
+    /* width: 50%; */
+    height: 100vh;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -32,9 +33,17 @@
     
  }
  .manipular-elementos h1{
-   font-family: 'Urbanist', sans-serif;
+  /*  font-family: 'Urbanist', sans-serif;
    font-size: 70px;
+   font-weight: 800; */
+
+  /*  text-align: center; */
+   color: #000;
+   font-family: "Urbanist", sans-serif;
+   font-size: 48px;
    font-weight: 800;
+   /* margin-top: 100px; */
+   z-index: 2;
  }
  
  #conta-usuario {
@@ -59,7 +68,7 @@
     display: block;
     width: 20rem;
     height: 0.3rem;
-    background-color: #4466EA;
+    background-color: #3B3BB8;
     margin: 0.5rem auto;
     position: absolute;
     border-radius: 10px;
@@ -86,7 +95,7 @@
     display: block;
     width: 20rem;
     height: 0.3rem;
-    background-color: #4466EA;
+    background-color: #3B3BB8;
     margin: 0.5rem auto;
     position: absolute;
     border-radius: 10px;

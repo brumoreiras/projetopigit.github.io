@@ -23,13 +23,15 @@
 .principal {
    background-color: white;
    width: 100%;
-   height: 100vh;
-   background-image: linear-gradient(to left, #4466EA 70%, #4466EA 0, #f0f5ff 30%);
+   height: auto;
+   background-image: linear-gradient(to left, #3B3BB8 70%, #3B3BB8 0, #f0f5ff 30%); 
 }
 
 .icone-menu img {
    height: 10rem;
-   padding: 3.5rem;
+   padding: 3.3rem;
+   margin-left: 15rem;
+
 }
 
 .menu-header {
@@ -42,24 +44,71 @@
    height: 4.5rem;
    padding: 2rem;
    border-bottom: 2px solid #d8d3ed;
-   gap: 45rem;
+   gap: 2rem;
 
 }
 
 .menu-bar {
+   justify-content: space-between;
    display: flex;
    flex-direction: row;
-   gap: 42px;
+   gap: 7rem;
 }
 
 .menu-bar-item {
-   font-family: 'Inter', sans-serif;
+   /* font-family: 'Inter', sans-serif;
    font-weight: 500;
    font-size: 1.4rem;
    color: #fff;
+   text-decoration: none; */
    text-decoration: none;
+   color: #C7C7F5;
+   font-family: "Inter", sans-serif;
+   font-weight: 500;
+   transition: 0.2s;
 
 }
+
+.menu-bar-item:hover,
+.menu-bar-item:focus {
+   color: #E7E7F5;
+}
+
+/*------------ botao login ---------------*/
+
+.log {
+   width: 128px;
+   height: 29px;
+   transition: 0.25s;
+   background: #FFFFFF;
+   border: 0;
+   border-radius: 6px;
+   margin-right: 20rem;
+
+}
+
+.log:hover,
+.log:focus {
+   background-color: #3B3BB8;
+   border: 2px solid #FFF;
+}
+
+.log:hover a,
+.log:focus a {
+   color: #FFF;
+}
+
+.log a {
+   font-family: "Inter";
+   font-style: normal;
+   font-weight: 700;
+   font-size: 16px;
+   line-height: 19px;
+   color: #3B3BB8;
+   text-decoration: none;
+}
+
+/*------------ botao login ---------------*/
 
 .conteudo-principal {
    display: flex;
@@ -70,33 +119,51 @@
 
 /* Estilização pagina de log */
 .first-section-login {
-   /* border: dashed; */
-   width: 50%;
+  /* padding: 5rem; */
+   /* width: 50%; */
+   /* align-items: center; */
    display: flex;
    flex-direction: column;
    justify-content: center;
-   align-items: center;
    color: #fff;
    order: 2;
-   /* padding: 5rem; */
+   margin-right: 11rem;
 }
 
 .alinhando {
    display: flex;
    flex-direction: column;
-  margin-right: 5rem;
-   /* padding: 2rem; */
+   justify-content: center;
+   align-items: center;
+   /* margin-right: 5rem; */
+   padding: 2rem;
+   margin-bottom: 10rem;
 }
 
 .texto-informativo {
-   width: 50%;
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+   justify-content: center;
+   padding: 2rem;
+   margin-bottom: 2rem;
 }
 
 .texto-informativo h1 {
+   width: 100%;
+  /*  border: dashed; */
    text-align: center;
+   color: #fff;
+   font-family: "Urbanist", sans-serif;
+   font-size: 48px;
+   font-weight: 800;
+   margin-top: 100px;
+   z-index: 2;
+   /* padding: 2rem; */
+   /* text-align: center;
    font-size: 80px;
-   width: 50rem;
-   font-weight: 300;
+   width: 50rem; */
+   /* font-weight: 300; */
 
 }
 
@@ -106,29 +173,29 @@
    font-size: 22px;
    font-weight: 500;
    width: 40rem;
-   padding: 1rem 0;
-   margin-left: 5rem;
+  
+   padding: 2rem 0;
+   /* margin-left: 5rem; */
 }
 
 .second-section-login {
-   /* border: dashed black; */
-   padding: 5rem;
-   width: 100%;
-   height: 100vh;
+
    display: flex;
    flex-direction: column;
-   /* justify-content: center; */
-   /* align-items: center; */
-   color: #fff;
-   padding: 5rem;
+   width: 50%;
+   justify-content: center;
+   align-items: center;
+   padding: 7rem;
+   /* height: 100vh; */
+   /* color: #fff; */
 }
 
 .form-login {
-   width: 60%;
-   height: 60vh;
+   width: 30rem;
+   /* height: 60vh; */
    display: flex;
    flex-direction: column;
-   flex-wrap: wrap;
+   /* flex-wrap: wrap; */
    justify-content: center;
    align-items: center;
    background-color: #fff;
@@ -144,12 +211,12 @@
    margin-bottom: 2rem;
    color: #000;
    font-family: 'Urbanist', sans-serif;
-   font-size: 36px;
+   font-size: 48px;
    font-weight: 800;
    text-align: center;
    letter-spacing: 0.1rem;
    padding: 0.2rem 0;
- 
+
 }
 
 .form-header-login h1::after {
@@ -157,7 +224,7 @@
    display: block;
    width: 12rem;
    height: 0.3rem;
-   background-color: #4466EA;
+   background-color: #3B3BB8;
    margin: 0 auto auto 6.5rem;
    position: absolute;
    border-radius: 10px;
@@ -167,19 +234,23 @@
    display: flex;
    flex-wrap: wrap;
    padding: 1rem 0;
+   justify-content: center;
 }
 
 .input-box-login {
    display: flex;
-   flex-direction: column; 
+   flex-direction: column;
+   flex-wrap: wrap;
+   margin-bottom: 1rem;
+   width: 25rem;
 
 }
 
 .input-box-login input {
-   width: 25rem;
-   height: 4rem;
- /*   margin: 0.3rem 0;
-   padding: 0.5rem 1rem; */
+   /* width: 25rem;*/
+   height: 3.5rem;
+   margin: 0.3rem 0;
+   padding: 0.5rem 1rem;
    border: none;
    border-radius: 8px;
    box-shadow: 1px 1px 6px #0000001c;
@@ -191,28 +262,28 @@
 
 .input-box-login label {
    font-family: 'Inter', sans-serif;
-   font-size: 1.2rem;
+   font-size: 1rem;
    font-weight: 600;
    color: #000000c0;
-   padding: 1rem 0;
+   /* padding: 1rem 0; */
 }
 
 .input-box-login input::placeholder {
    color: #000000be;
-   position: absolute;
+   /*  position: absolute;
    padding: 1rem;
-   font-size: 1rem;
+   font-size: 1rem; */
 }
 
 .lembretes {
+   /* border: dashed; */
    display: flex;
    flex-direction: row;
    justify-content: space-between;
    font-family: 'Inter', sans-serif;
    font-size: 1rem;
    font-weight: 100;
-   /* align-items: flex-start; */
-
+   gap: 9rem;
 }
 
 .lembretes a {
@@ -222,51 +293,75 @@
 }
 
 .entrar button {
-   width: 35rem;
+  /*  border: dashed; */
+   width: 30rem;
+   height: 3.5rem;
+   border: 0;
    font-family: 'Urbanist', sans-serif;
    font-weight: 800;
    font-size: 22px;
-   background-color: #fff;
-   color: #4466EA;
-   margin: 3rem 8rem;
-   padding: 1rem;
-   border-radius: 0.3rem;
+   background-color: #FFFFFF;
+   /* color: #3B3BB8; */
+   /* padding: 1rem; */
+   margin-bottom: 5rem;
+   border-radius: 5px;
    cursor: pointer;
-   letter-spacing: 0.3rem;
+   letter-spacing: 0.1rem;
+   transition: 0.25s;
 
 }
 
 .entrar a {
    text-decoration: none;
-   color: #000;
+   color: #3B3BB8;
    padding: 2rem;
 }
+.entrar:hover button, .entrar:focus button{
+   background-color: #3B3BB8;
+   border: 2px solid #FFF;
+}
+.entrar:hover a, .entrar:focus a{
+  color: #FFF;
+}
+
+
 
 .entrar-login button {
    width: 100%;
-   height: 4rem;
+   height: 3.5rem;
    font-family: 'Urbanist', sans-serif;
    font-weight: 800;
-   font-size: 1.5rem;
+   font-size: 22px;
    margin-top: 2rem;
-   background-color: #4466EA;
-   padding: 1rem;
-   border-radius: 8px;
+   background-color: #3B3BB8;
+   /* padding: 0.80rem; */
+   border: 0;
+   border-radius: 5px;
    cursor: pointer;
-   letter-spacing: 0.3rem;
-   font-weight: 900;
+   align-items: center;
+   letter-spacing: 0.1rem;
+   transition: 0.25s;
+
+}
+.entrar-login:hover button, .entrar-login:focus{
+   background-color: #FFF;
+   border: 3px solid #3B3BB8;
+}
+
+.entrar-login:hover a, .entrar-login:focus a{
+   color: #3B3BB8;
 }
 
 .entrar-login a {
    text-decoration: none;
    color: #fff;
-   padding: 2rem;
+   /* padding: 2rem; */
    letter-spacing: 0.4rem;
 }
 
-.entrar-login:hover{
+/* .entrar-login:hover{
    padding: 1rem;
-}
+} */
 
 /* ----------- Mensagem de erro ----------- */
 /* .mensagem-erro {

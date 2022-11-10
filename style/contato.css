@@ -8,11 +8,10 @@
 }
 
 .first-section {
+   /* border: dashed black; */
     display: flex;
     flex-direction: column;
     width: 50%;
-    display: flex;
-    flex-direction: column;
     justify-content: center;
     align-items: center;
  
@@ -20,32 +19,31 @@
  
  #form-contato {
     width: 30rem;
-    height: 70vh;
+    height: 90%;
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
     background-color: #fff;
-    padding: 3rem;
-    border-radius: 30px;
-    height: 90%;
+    padding: 5rem;
     margin-top: 0.8rem;
+    border-radius: 30px;
     border: 0.1px solid rgba(0, 0, 0, .2);
     box-shadow: 5px 3px 3px 5px rgba(0, 0, 0, .2);
  }
  
- .form-header-contato {
-    margin-bottom: 1rem;
- }
+
  
- .form-header-contato h1 {
+ .form-header-contato{
    font-family: 'Urbanist', sans-serif;
    font-size: 36px;
    font-weight: 800;
    margin-bottom: 1.5rem;
    margin-top: 0.3rem;
    color: #000;
+   z-index: 2;
    padding: 0.2rem 0;
+  
  }
  .titulo-cadastro{
    width: 90%;
@@ -62,7 +60,7 @@
     display: block;
     width: 15rem;
     height: 0.3rem;
-    background-color: #4466EA;
+    background-color: #3B3BB8;
     margin: 0 auto;
     position: absolute;
     border-radius: 10px;
@@ -80,15 +78,16 @@
     display: flex;
     flex-direction: column;
     flex-wrap: wrap;
-    margin-bottom: 1.1rem;
+    margin-bottom: 1rem;
     width: 25rem;
  }
  
  .input-box-form input {
+   height: 3.5rem;
     margin: 0.6rem 0;
     padding: 0.8rem 1.2rem;
     border: none;
-    border-radius: 10px;
+    border-radius: 8px;
     box-shadow: 1px 1px 6px #0000001c;
  
  }
@@ -121,51 +120,76 @@
  
  .botao-concluir-form button {
     width: 100%;
+    height: 3.5rem;
+    font-family: 'Urbanist', sans-serif;
+   font-weight: 800;
+   font-size: 22px;
     margin-top: 0.5rem;
-    background-color: #4466EA;
-    padding: 0.62rem;
+    background-color: #3B3BB8;
+    /* padding: 0.62rem; */
     border-radius: 5px;
     cursor: pointer;
     align-items: center;
-    margin-bottom: 1rem;
+    letter-spacing: 0.1rem;
+    transition: 0.25s;
  
  }
+ .botao-concluir-form:hover button, .botao-concluir-form:focus{
+   background-color: #FFF;
+   border: 3px solid #3B3BB8;
+}
  
  .botao-concluir-form a {
     text-decoration: none;
     color: #fff;
     padding: 3rem;
-    font-size: 18px;
+    /* font-size: 18px; */
+    letter-spacing: 0.4rem;
  }
+ .botao-concluir-form:hover a, .botao-concluir-form:focus a{
+   color: #3B3BB8;
+}
+
  
  .second-section {
+
+  /*  border: dashed; */
     display: flex;
     flex-direction: column;
-    justify-content: center;
+    /* justify-content:; */
     color: #fff;
  }
  
  div#caixa-de-contato {
-    display: flex;
+   /* padding: 10rem auto; */
+   margin: 10rem auto;
+   /* border: dashed; */
+   /* justify-content: baseline; */
+   display: flex;
+   flex-direction: column;
+   /*  display: flex;
     flex-direction: column;
-    align-items: center;
+    align-items: center; */
  }
  
  div#caixa-de-contato h1 {
+   
    font-family: 'Urbanist', sans-serif;
-   font-size: 96px;
+   font-size: 68px;
    font-weight: 800;
     width: 40rem;
     display: flex;
     flex-direction: column;
-    align-items: center;
+    /* align-items: center; */
     letter-spacing: 5px;
+    /* padding: 10rem; */
+    
  
  }
  
  div#caixa-de-contato h2 {
     width: 400px;
-    font-family: 'Inter', sans-serif;
+     font-family: 'Urbanist', sans-serif;
     text-align: center;
     font-size: 25px;
     font-weight: 500;

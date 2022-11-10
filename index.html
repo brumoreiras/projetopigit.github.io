@@ -7,11 +7,10 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style/estilo.css">
-    
+
     <title>iExplore</title>
 </head>
 
-<body class="estilizado">
 
     <body class="estilizado">
         <section class="principal">
@@ -27,8 +26,13 @@
                     <a class="menu-bar-item" href="/index.html">Sobre</a>
                     <a class="menu-bar-item" href="/paginas/contato.html">Contato</a>
                     <a class="menu-bar-item" href="/index.html">Login</a>
-                   <!--  <img src="/img/align-justify.png" alt="menu-list"> -->
+                    <!--  <img src="/img/align-justify.png" alt="menu-list"> -->
                 </nav>
+                <div>
+                    <button class="log">
+                        <a href="paginas/opcoesDeCadastro.html">Resgistrar</a>
+                    </button>
+                </div>
 
             </header>
 
@@ -37,9 +41,10 @@
                 <section class="first-section-login">
 
                     <div class="alinhando">
-                        <div class="texto-informativo">                        
+                        <div class="texto-informativo">
                             <h1>Bem-Vindo ao mundo das possibilidade.</h1>
-                            <p>Agora você não terá mais problemas em achar o que fazer na sua cidade, basta se cadastrar                               e
+                            <p>Agora você não terá mais problemas em achar o que fazer na sua cidade, basta se cadastrar
+                                e
                                 ter acesso ao que está acontecendo a sua volta.</p>
                         </div>
 
@@ -52,50 +57,54 @@
 
                 <section class="second-section-login">
 
-                    <div class="form-login">
+                    <div class="form-login" id="fomrLogin">
                         <form action="#">
 
                             <div class="form-header-login">
                                 <h1>Entrar</h1>
                             </div>
-                            
+
                             <div class="input-group-login">
 
                                 <div class="input-box-login">
-                                    <label for="password">Usuário</label>
-                                    <input type="password" name="password" id="password" placeholder="Digite seu e-mail"
-                                       data-tipo="emailLogin" required>
+                                    <label for="e-mail">Usuário</label>
+                                    <input type="email" name="email" id="emailL" placeholder="Digite seu e-mail"
+                                        data-tipo="emailLogin" required>
+                                    <span class="mensagem-erro"></span>
                                 </div>
 
                                 <div class="input-box-login">
                                     <label for="confirme-password">Senha</label>
-                                    <input type="password" name="confirme-password" id="confirme-password"
-                                    data-tipo="senhaLogin" placeholder="Digite sua senha" required>
+                                    <input type="password" name="confirme-password" id="senhaA" data-tipo="senhaLogin"
+                                        placeholder="Digite sua senha" required>
+                                    <span class="mensagem-erro"></span>
+                                </div>
+                                <div class="lembretes">
+                                    <div class="cadastre-se">
+                                        <a href="/paginas/opcoesDeCadastro.html" class="cadastro">Cadastre-se</a></span></p>
+                                    </div>
+                                    <div class="esqueceu-senha">
+                                        <a href="" class="redefine-senha" id="redefine">Esqueceu a senha?</a>
+                                    </div>
                                 </div>
                             </div>
-                            <div class="lembretes">
-                                <div class="cadastre-se">
-                                    <a href="/paginas/opcoesDeCadastro.html" class="cadastro">Cadastre-se</a></span></p>
-                                </div>
-                                <div class="esqueceu-senha">
-                                    <a href="" class="redefine-senha" id="redefine">Esqueceu a senha?</a>
-                                </div>
-                            </div>
+                            
+
                             <div class="entrar-login">
-                                <button><a href="#">Entrar</a></button>
+                                <button type="submit"><a href="#">Entrar</a></button>
                             </div>
-
-
+                        </form>
                     </div>
 
-                    </form>
+
+
 
                     </div>
                 </section>
-            
+
             </main>
         </section>
-        <script src="/jScript/main.js" ></script>
+        <script src="/jScript/main.js"></script>
     </body>
 
 </html>
