@@ -274,4 +274,4 @@ login.addEventListener('submit', (evento) => {
 })
 
 
-// ---------------- Acesso login
+// ------------------------ Acesso login ---------------------------
