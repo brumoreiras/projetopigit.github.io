@@ -270,9 +270,6 @@ login.addEventListener('submit', (evento) => {
 
     localStorage.setItem('dadosLogin', JSON.stringify(dadosLogin))
 
-    /*  criaLogin(confEmail.value, confSenha.value) */
-    //Aqui me permite pegar apenas o e-mail e senha, que no caso da validação do login é o que eu preciso para buscar e fazer o login com sucesso. 
-
     login.reset()
 })
 
