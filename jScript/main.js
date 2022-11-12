@@ -255,27 +255,26 @@ function preencheCamposComCep(data) {
 }
 
 //----------------- ARMAZENA EMAIL -------------------
-/*  function armazenaEmail (input){
-    const emailLogin = document.querySelector('[data-tipo="emailLogin]')
-    const senhaLogin = document.querySelector('[data-tipo="senhaLogin"]')
-
-
-    console.log(emailLogin.value)
-    console.log(senhaLogin.value)
-} */
 const login = document.getElementById('fomrLogin')
-console.log(login)
+const confEmail = document.getElementById('confirme-email')
+const confSenha = document.getElementById('confirme-password')
+const dadosLogin = JSON.parse(localStorage.getItem('dadosLogin') || '[]')
 
-/* login.addEventListener('submit', (enviar) => {
-    enviar.preventDefault()
+login.addEventListener('submit', (evento) => {
+    evento.preventDefault()
 
-    const emailLogin = document.querySelector('[data-tipo="emailLogin]')
-    const senhaLogin = document.querySelector('[data-tipo="senhaLogin"]')
+    dadosLogin.push({
+        email: confEmail.value,
+        senha: confSenha.value
+    })
+
+    localStorage.setItem('dadosLogin', JSON.stringify(dadosLogin))
+
+    /*  criaLogin(confEmail.value, confSenha.value) */
+    //Aqui me permite pegar apenas o e-mail e senha, que no caso da validação do login é o que eu preciso para buscar e fazer o login com sucesso. 
+
+    login.reset()
+})
 
 
-    console.log(emailLogin.value)
-    console.log(senhaLogin.value)
-}) */
-
-
-
+// ---------------- Acesso login
