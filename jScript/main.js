@@ -143,13 +143,13 @@ function validaEmail(input) {
     let inf = ''
 
     if (email.value != confirmacao.value) {
-        /* console.log('o email é igual') */
+
         inf = 'O e-mail digitado não confere.'
         input.setCustomValidity('O e-mail digitado não confere.')
         return
 
     } else {
-        /* console.log('diferente') */
+
         inf = ''
         input.setCustomValidity('')
         return
@@ -239,7 +239,7 @@ function chamaCEP(input) {
         )
     }
 }
-//preencher os campos. 
+// ----------------- Preenchendo os campos de endereço. ------------------
 
 function preencheCamposComCep(data) {
     const logradouro = document.querySelector('[data-tipo="logradouro"]')
@@ -254,14 +254,14 @@ function preencheCamposComCep(data) {
     bairro.value = data.bairro
 }
 
-//----------------- ARMAZENA EMAIL -------------------
-const login = document.getElementById('fomrLogin')
+//----------------- Armazenando dados no localStorage -------------------
+
 const confEmail = document.getElementById('confirme-email')
 const confSenha = document.getElementById('confirme-password')
-const dadosLogin = JSON.parse(localStorage.getItem('dadosLogin') || '[]')
 
-login.addEventListener('submit', (evento) => {
-    evento.preventDefault()
+function cadastroSucesso(confEmail, confSenha) {
+
+    const dadosLogin = JSON.parse(localStorage.getItem('dadosLogin') || '[]')
 
     dadosLogin.push({
         email: confEmail.value,
@@ -269,9 +269,37 @@ login.addEventListener('submit', (evento) => {
     })
 
     localStorage.setItem('dadosLogin', JSON.stringify(dadosLogin))
+}
 
-    login.reset()
-})
+// --------------------- Autenticação de login -------------------------------
 
+const inputEmail = document.getElementById('emailL')
+const inputSenha = document.getElementById('senhaA')
+    
+function entrou() {
 
-// ------------------------ Acesso login ---------------------------
+    let listLogin = []
+    let objLogin = {
+        emails: '',
+        senhas: ''
+    }
+
+    listLogin = JSON.parse(localStorage.getItem('dadosLogin'))
+
+    listLogin.forEach((item) => {
+        if (inputEmail.value == item.email && inputSenha.value == item.senha) {
+
+            objLogin = {
+                emails: item.email,
+                senhas: item.senha
+            }
+        }
+
+    })
+    if (inputEmail.value == objLogin.emails && inputSenha.value == objLogin.senhas) {
+        alert('Entrou')
+    } else {
+        alert('Acesso negado')
+    }
+}
+

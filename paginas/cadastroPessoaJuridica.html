@@ -22,8 +22,8 @@
             </div>
 
             <nav class="menu-bar">
-                <a class="menu-bar-item" href="/home.html">Home</a>
-                <a class="menu-bar-item" href="/home.html">Sobre</a>
+                <a class="menu-bar-item" href="/index.html">Home</a>
+                <a class="menu-bar-item" href="/index.html">Sobre</a>
                 <a class="menu-bar-item" href="/paginas/contato.html">Contato</a>
                 <a class="menu-bar-item" href="/index.html">Login</a>
                 <!-- <img src="/img/align-justify.png" alt="menu-list"> -->
@@ -69,7 +69,7 @@
                             <div class="input-box">
                                 <label for="cnpj">CNPJ</label>
                                 <input type="text" name="cnpj" id="cnpj" placeholder="xx.xxx.xxx/xxxx-xx"
-                                    data-tipo="cnpj" pattern="/^(\d{2}\.?\d{3}\.?\d{3}\/?\d{4}-?\d{2})$/" required>
+                                    data-tipo="cnpj"  required>  <!-- pattern="/^(\d{2}\.?\d{3}\.?\d{3}\/?\d{4}-?\d{2})$/" -->
                                 <span class="mensagem-erro"></span>
                             </div>
 
@@ -168,7 +168,7 @@
 
                                 <div class="input-box">
                                     <label for="email">Confirme seu e-mail</label>
-                                    <input type="email" name="email" id="email-confirmacao"
+                                    <input type="email" name="email" id="confirme-email"
                                         placeholder="Digite confirme seu e-mail" data-tipo="confirmeEmail" required>
                                     <span class="mensagem-erro"></span>
                                 </div>
@@ -199,7 +199,7 @@
 
                         </div>
                         <div class="botao-concluir">
-                            <button><a href="#">Concluir cadastro</a></button>
+                            <button onclick="cadastroSucesso(confEmail, confSenha)" a href="#">Concluir cadastro </button>
                         </div>
                     </form>
                 </div>

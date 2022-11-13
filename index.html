@@ -58,7 +58,7 @@
                 <section class="second-section-login">
 
                     <div class="form-login">
-                        <form action="#"id="loginAcesso"  > <!-- id="fomrLogin"-->
+                        <form action="#" id="fomrLogin"  > <!--id="loginAcesso" id="fomrLogin" -->
 
                             <div class="form-header-login">
                                 <h1>Entrar</h1>
@@ -69,14 +69,14 @@
                                 <div class="input-box-login">
                                     <label for="e-mail">Usuário</label>
                                     <input type="email" name="email" id="emailL" placeholder="Digite seu e-mail"
-                                        data-tipo="emailLogin" required>
+                                          required><!-- data-tipo="emailLogin" -->
                                     <span class="mensagem-erro"></span>
                                 </div>
 
                                 <div class="input-box-login">
                                     <label for="confirme-password">Senha</label>
-                                    <input type="password" name="confirme-password" id="senhaA" data-tipo="senhaLogin"
-                                        placeholder="Digite sua senha" required>
+                                    <input type="password" name="confirme-password" id="senhaA" 
+                                        placeholder="Digite sua senha" required> <!-- data-tipo="senhaLogin" -->
                                     <span class="mensagem-erro"></span>
                                 </div>
                                 <div class="lembretes">
@@ -91,7 +91,7 @@
                             
 
                             <div class="entrar-login" >
-                                <button type="submit" a href="#">Entrar</button>
+                                <button type="submit" onclick="entrou()" a href="#">Entrar</button>
                             </div>
                         </form>
                     </div>
@@ -105,7 +105,7 @@
             </main>
         </section>
         <script src="/jScript/main.js"></script>
-        <script src="/jScript/teste.js" type="module" ></script>
+    <!--     <script src="/jScript/teste.js" type="module" ></script> -->
     </body>
 
 </html>
