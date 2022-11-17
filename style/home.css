@@ -1,0 +1,210 @@
+.menu-header {
+
+    background-color: #3B3BB8;
+}
+
+.estrutura {
+    display: flex;
+    background-image: -webkit-linear-gradient(30deg, #fff 60%, #3B3BB8 30%);
+
+}
+
+.titulo-informativo {
+    margin: 20rem auto;
+
+}
+
+.titulo-informativo h1 {
+    text-align: left;
+    font-family: "Inter", sans-serif;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 45px;
+
+}
+
+.titulo-informativo p {
+    margin-top: 1rem;
+    text-align: left;
+    font-family: "Inter";
+    font-style: normal;
+    font-weight: 700;
+    font-size: 22px;
+
+}
+
+.botao-sobre {
+    width: 15rem;
+    height: 3rem;
+    font-family: "Inter";
+    font-style: normal;
+    font-weight: 700;
+    font-size: 18px;
+    border-radius: 5px;
+    padding: 3rem auto;
+    margin-top: 1.5rem;
+    transition: 0.25s;
+    background: #3B3BB8;
+    border: 0;
+    color: #FFF;
+
+}
+
+.botao-sobre:hover,
+.botao-sobre:focus {
+    background-color: #FFF;
+    border: 2px solid #3B3BB8;
+    color: #3B3BB8;
+}
+
+.imagem-informativa {
+    display: flex;
+    justify-content: center;
+    padding: 4rem;
+    width: 50rem;
+}
+
+.conteudo {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    justify-items: center;
+
+}
+
+.conteudo-informativo--titulo {
+    grid-column: span 3;
+    padding: 3rem;
+    text-align: left;
+    font-family: "Inter", sans-serif;
+    font-weight: 700;
+    font-size: 38px;
+}
+
+.conteudo-informativo__img {
+    display: flex;
+    flex-direction: column;
+    /*    border: dashed; */
+    height: 85vh;
+    width: 35rem;
+
+}
+
+.conteudo-informativo__img img {
+    padding: 1rem;
+    width: 30rem;
+    height: 20rem;
+}
+
+.conteudo-informativo__img figcaption {
+    font-family: "Urbanist", sans-serif;
+    font-weight: 600;
+    font-size: 22px;
+    margin-left: 6rem;
+}
+
+.conteudo-informativo__img::before {
+    content: '';
+    border: 0.5rem solid #3B3BB8;
+    position: absolute;
+    width: 28rem;
+    height: 20rem;
+    margin: 2rem 2rem;
+    z-index: -10;
+}
+
+.conteudo-informativo__img h1 {
+    font-family: "Inter", sans-serif;
+    margin-top: 2rem;
+    text-align: center;
+
+}
+
+.conteudo-informativo__img p {
+    font-family: "Inter", sans-serif;
+    margin-top: 0.5rem;
+    font-size: 18px;
+    text-align: justify;
+    width: 28rem;
+    margin-left: 2rem;
+}
+
+.conteudo-informativo__img span {
+    font-weight: bold;
+}
+
+.sobre {
+    background-color: #3B3BB8;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 16px;
+    grid-column: auto;
+    color: #FFF;
+    padding: 10rem;
+
+
+}
+
+.titulo-1 {
+    grid-column: span 3;
+    text-align: center;
+    font-family: "Inter", sans-serif;
+    font-weight: 700;
+    font-size: 45px;
+    padding: 1rem;
+   /*  border: dashed; */
+}
+
+.sobre-descricao {
+    margin: 0 3rem 0 3rem;
+    padding: 5rem;
+/*     border: dashed; */
+    /*  width: 30rem; */
+
+
+}
+
+.video {
+   display: grid;
+    justify-items: center;
+    gap: 16px;
+}
+.video h1{
+    grid-column: span 2;
+    font-family: "Inter", sans-serif;
+    font-weight: 700;
+    font-size: 45px;
+    padding: 2rem;
+
+}
+.video-app__java{
+ /*   display: grid; */
+ border: dashed;
+ margin: 5rem 5rem;
+padding: 15rem;
+}
+.dev-linguagem{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    justify-items: center;
+}
+.dev-linguagem h2{
+    grid-column: span 2;
+    font-family: "Inter", sans-serif;
+    font-weight: 700;
+    font-size: 36px;
+    padding: 2rem;
+}
+.rodape {
+    background-color: #3B3BB8;
+    color: #FFF;
+}
+.nomes-integrantes{
+    font-family: "Inter", sans-serif;
+    font-weight: 700;
+    font-size: 0.6rem;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    padding: 3rem;
+    gap: 2rem;
+}

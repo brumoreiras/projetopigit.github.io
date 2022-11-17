@@ -1,8 +1,8 @@
 
-// -------------- CRIANDO UM EVENTO NO INPUT PARA CHAMAR AS FUNÇÕES ------------------
+
 const inputs = document.querySelectorAll('input')
 
-// laço de repetição para todos os inputs e colocar um blur para todos os inputs. 
+
 inputs.forEach(input => {
     input.addEventListener('blur', (evento) => {
         valida(evento.target)
@@ -15,7 +15,7 @@ function valida(input) {
     if (validadores[tipoDeInput]) {
         validadores[tipoDeInput](input)
     }
-    // Quero mostra mensagem de erro no input então vou colocar aqui para que aconteça no inicio, do processo de validação 
+    
     if (input.validity.valid) {
         input.parentElement.classList.remove('erro')
         input.parentElement.querySelector('.mensagem-erro').innerHTML = ''
@@ -26,16 +26,15 @@ function valida(input) {
     }
 
 }
-// ---------- OBJETO QUE FACILITA A CHEGAGEM DE ERRO DO INPUT, QUAL VALID ESTAMOS TRATANTO. -------------
+
 const tiposDeErro = [
     'valueMissing',
     'typeMismatch',
     'patternMismatch',
     'customError',
-    //caso eu tenha mais erros para tratar eu posso incluir ele aqui. 
+
 ]
 
-// -------------------- AQUI VOU CRIAR UM OBJETO PARA FACILITAR A TRATATIVA DE TODAS AS MENSAGENS DE ERRO -----------------
 const mensagemErro = {
     nome: {
         valueMissing: 'O campo nome não pode estar vazio.'
@@ -112,15 +111,48 @@ const mensagemErro = {
 
 const validadores = {
     dataNascimento: input => validaDataNascimento(input),
-    // CHAMAR AQUI A VALIDA CNPJ
-    // vou chamar a função valida CEP dentro da validadores para fazer a validação, assim como faz a de validaDataNascimento()
     cep: input => chamaCEP(input),
     confirmeEmail: input => validaEmail(input),
-    confirmePassword: input => validaSenha(input),
-    /* emailLogin: input => armazenaEmail(input) */
+    confirmePassword: input => validaSenha(input)
 
 }
-// ------------------ AQUI VOU CRIAR UMA FUNÇÃO QUE MOSTRA MENSAGEM DE ERRO ---------------
+
+
+function validaEmail(input) {
+    const email = document.querySelector('#email').value
+    const confirmeEmail = input.value
+
+    let inf = ''
+
+    if (email == confirmeEmail) {
+        inf = ''
+        input.setCustomValidity('')
+        return
+
+    } else {
+        inf = 'O e-mail digitado não confere.'
+        input.setCustomValidity('O e-mail digitado não confere.')
+        return
+    }
+}
+
+function validaSenha(input) {
+    const password = document.querySelector('#password').value
+    const confirmePassword = input.value
+
+    let inf = ''
+
+    if (password == confirmePassword) {
+        inf = ''
+        input.setCustomValidity('')
+        return
+
+    } else {
+        inf = 'A senha digita não confere.'
+        input.setCustomValidity('A senha digita não confere.')
+        return
+    }
+}
 
 function mostraMensagemErro(tipoDeInput, input) {
     let mensagem = ''
@@ -134,79 +166,24 @@ function mostraMensagemErro(tipoDeInput, input) {
 
     return mensagem
 }
-// ------------------- VALIDANDO E-MAIL ----------------------
 
-function validaEmail(input) {
-    const email = document.querySelector('[data-tipo="email"]')
-    const confirmacao = document.querySelector('[data-tipo="confirmeEmail"]')
-
-    let inf = ''
-
-    if (email.value != confirmacao.value) {
-
-        inf = 'O e-mail digitado não confere.'
-        input.setCustomValidity('O e-mail digitado não confere.')
-        return
-
-    } else {
-
-        inf = ''
-        input.setCustomValidity('')
-        return
-    }
-
-
-}
-// ------------------- VALIDANDO E-MAIL ----------------------
-
-function validaSenha(input) {
-    const password = document.querySelector('[data-tipo="password"]')
-    const confirmePassword = document.querySelector('[data-tipo="confirmePassword"]')
-
-    let mensagem = ''
-
-    if (password.value != confirmePassword.value) {
-        /* console.log('o email é igual') */
-        mensagem = 'A senha digita não confere.'
-        input.setCustomValidity('A senha digita não confere.')
-        return
-
-    } else {
-        /* console.log('diferente') */
-        mensagem = ''
-        input.setCustomValidity('')
-        return
-    }
-
-
-}
-
-// -------------- VALIDANDO DATA DE NASCIMENTO ------------------------
-// Essa função transforma o valor de string capturada pelo input e transforma em data. 
 function validaDataNascimento(input) {
     const dataRecebida = new Date(input.value)
     let mensagem = ''
 
-    if (!maiorQue18(dataRecebida)) { // esssa mensagem só é exibida se for falso. 
+    if (!maiorQue18(dataRecebida)) { 
         mensagem = 'Você deve ser maior que 18 anos para se cadastrar'
     }
 
-    //Para o navegador entender que existe algum erro naquele campo, nós temos que usar uma propriedade do input chamada setCustomValidity 
     input.setCustomValidity(mensagem)
 }
-// Essa função compara o valor das datas. 
+ 
 function maiorQue18(data) {
-    //Aqui está pegando a data atual. 
     const dataAtual = new Date()
-    //agora fazer a comparação pegar a data recebida e somar 18 anos.
-    // Para isso vou criar uma nova data para fazer essa comparação. 
     const dataMais18 = new Date(data.getUTCFullYear() + 18, data.getUTCMonth(), data.getUTCDate())
-
-    //agora feito isso eu posso fazer um retorno para chegar se a data digitada é maior que 18 anos. 
     return dataMais18 <= dataAtual
 }
 
-// essa é a função chama cep
 
 function chamaCEP(input) {
     const cep = input.value.replace(/\D/g, '')
@@ -219,27 +196,24 @@ function chamaCEP(input) {
         }
 
     }
-    //so vou fazer a requisição se o valor do patternMismatch for false. 
+
     if (!input.validity.patternMismatch && !input.validity.valueMissing) {
         fetch(url, opcoes).then(
             response => response.json()
         ).then(
             data => {
-                //tratando o erro da requisição 
-                //console.log(data)
+
                 if (data.erro) {
                     input.setCustomValidity('Não foi possivel buscar o CEP.')
                     return
                 }
                 input.setCustomValidity('')
-                //validar este campo.
                 preencheCamposComCep(data)
                 return
             }
         )
     }
 }
-// ----------------- Preenchendo os campos de endereço. ------------------
 
 function preencheCamposComCep(data) {
     const logradouro = document.querySelector('[data-tipo="logradouro"]')
@@ -254,7 +228,6 @@ function preencheCamposComCep(data) {
     bairro.value = data.bairro
 }
 
-//----------------- Armazenando dados no localStorage -------------------
 
 const confEmail = document.getElementById('confirme-email')
 const confSenha = document.getElementById('confirme-password')
@@ -275,8 +248,11 @@ function cadastroSucesso(confEmail, confSenha) {
 
 const inputEmail = document.getElementById('emailL')
 const inputSenha = document.getElementById('senhaA')
-    
-function entrou() {
+
+const botaoEntrou = document.getElementById('fomrLogin')
+if(botaoEntrou){
+botaoEntrou.addEventListener('submit', (e) => {
+    e.preventDefault()
 
     let listLogin = []
     let objLogin = {
@@ -297,9 +273,15 @@ function entrou() {
 
     })
     if (inputEmail.value == objLogin.emails && inputSenha.value == objLogin.senhas) {
-        alert('Entrou')
+        window.location.replace("/paginas/bemVindo.html")
+        return
     } else {
         alert('Acesso negado')
+        return
     }
-}
 
+
+})
+
+
+}
