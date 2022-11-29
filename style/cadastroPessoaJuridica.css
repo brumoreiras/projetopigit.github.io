@@ -1,8 +1,3 @@
-/* @import "/style/estilo.css";
-@import "/style/cadastroPessoaJuridica.css"; */
-
-
-/* Estilização pagina cadastroPJ */
 #principal {
    height: 140vh;
 }
@@ -25,9 +20,6 @@
 }
 
 .form {
-   /*  height: auto; */
-   /* align-items: center;
-   justify-content: center; */
    width: 75.5rem;
    display: flex;
    flex-direction: column;
@@ -80,7 +72,6 @@
 }
 
 .input-box input {
-   /* width: 18rem; */
    width: 22rem;
    height: 3.5rem;
    margin: 0.6rem 0;
@@ -88,7 +79,6 @@
    border: none;
    border-radius: 10px;
    box-shadow: 1px 1px 6px #0000001c;
-   /*    display: flex; */
 
 }
 
@@ -107,42 +97,34 @@
 .input-box input::placeholder {
    color: #000000be;
 }
-.botao-concluir{
+
+.botao-concluir {
    display: flex;
    justify-content: center;
 }
+
 .botao-concluir button {
    width: 90%;
    height: 3.5rem;
    font-family: 'Urbanist', sans-serif;
    font-weight: 800;
    font-size: 22px;
-  /*  margin-top: 0.5rem; */
-   /* margin-bottom: 0; */
+   color: #FFF;
    background-color: #3B3BB8;
-   /* padding: 0.2rem; */
    border: 0;
    border-radius: 5px;
    cursor: pointer;
    letter-spacing: 0.2rem;
    transition: 0.25s;
-   /* font-weight: 900; */
 }
+
 .botao-concluir:hover button,
 .botao-concluir:focus {
    background-color: #FFF;
    border: 3px solid #3B3BB8;
-}
-.botao-concluir a {
-   text-decoration: none;
-   color: #fff;
-  /*  padding: 1rem; */
-}
-.botao-concluir:hover a,
-.botao-concluir:focus a {
    color: #3B3BB8;
-   padding: 1rem;
 }
+
 .titulo-cadastro {
    width: 100%;
    display: block;
@@ -156,26 +138,23 @@
 }
 
 #confirmacao-entrada {
- /*   border: dashed; */
    width: 100%;
    display: flex;
-   /* flex-direction: row; */
    flex-wrap: wrap;
 
 }
 
 #confirmacao-entrada input {
- /*   border: dashed; */
    width: 32rem;
    margin: 0.6rem 0;
    padding: 0.8rem 1.2rem;
 
 }
-#confirmacao-entrada div{
+
+#confirmacao-entrada div {
    width: 50%;
 }
 
-/* ----------- Mensagem de erro ----------- */
 .mensagem-erro {
    display: block;
    color: red;

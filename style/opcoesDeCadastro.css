@@ -1,7 +1,3 @@
-/* @import "/style/estilo.css"; */
-/* @import "/style/opcoesDeCadastro.css"; */
-
-/*Estilização opções de cadastro*/
 .principal-op-cadastro {
     background-color: white;
     width: 90%;
@@ -22,7 +18,6 @@
  }
  
  .manipular-elementos {
-    /* width: 50%; */
     height: 100vh;
     display: flex;
     flex-direction: column;
@@ -33,16 +28,10 @@
     
  }
  .manipular-elementos h1{
-  /*  font-family: 'Urbanist', sans-serif;
-   font-size: 70px;
-   font-weight: 800; */
-
-  /*  text-align: center; */
    color: #000;
    font-family: "Urbanist", sans-serif;
    font-size: 48px;
    font-weight: 800;
-   /* margin-top: 100px; */
    z-index: 2;
  }
  
@@ -109,7 +98,6 @@
     align-items: center;
  }
  
- /* ----------- Mensagem de erro ----------- */
 .mensagem-erro {
    display: block;
    color: red;

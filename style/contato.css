@@ -1,40 +1,34 @@
-/* @import "/style/estilo.css";
-@import "/style/contato.css";
- */
-
-/*Estilização pagina contato */
-#principal{
+#principal {
    height: auto;
 }
 
 .first-section {
-   /* border: dashed black; */
-    display: flex;
-    flex-direction: column;
-    width: 50%;
-    justify-content: center;
-    align-items: center;
- 
- }
- 
- #form-contato {
-    width: 30rem;
-    height: 90%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-    background-color: #fff;
-    padding: 5rem;
-    margin-top: 0.8rem;
-    border-radius: 30px;
-    border: 0.1px solid rgba(0, 0, 0, .2);
-    box-shadow: 5px 3px 3px 5px rgba(0, 0, 0, .2);
- }
- 
+   display: flex;
+   flex-direction: column;
+   width: 50%;
+   justify-content: center;
+   align-items: center;
 
- 
- .form-header-contato{
+}
+
+#form-contato {
+   width: 30rem;
+   height: 90%;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   flex-direction: column;
+   background-color: #fff;
+   padding: 5rem;
+   margin-top: 0.8rem;
+   border-radius: 30px;
+   border: 0.1px solid rgba(0, 0, 0, .2);
+   box-shadow: 5px 3px 3px 5px rgba(0, 0, 0, .2);
+}
+
+
+
+.form-header-contato {
    font-family: 'Urbanist', sans-serif;
    font-size: 36px;
    font-weight: 800;
@@ -43,9 +37,10 @@
    color: #000;
    z-index: 2;
    padding: 0.2rem 0;
-  
- }
- .titulo-cadastro{
+
+}
+
+.titulo-cadastro {
    width: 90%;
    display: block;
    margin-bottom: 0.4rem;
@@ -54,192 +49,183 @@
    font-size: 1rem;
    font-weight: 500;
    padding: 0.5rem;
- }
- .form-header-contato h1::after {
-    content: '';
-    display: block;
-    width: 15rem;
-    height: 0.3rem;
-    background-color: #3B3BB8;
-    margin: 0 auto;
-    position: absolute;
-    border-radius: 10px;
- }
- 
- .input-group-form {
-    display: flex;
-    flex-wrap: wrap;
-    padding: 1rem 0;
-    justify-content: center;
- }
- 
- .input-box-form {
-    /*border: 3px dashed black;*/
-    display: flex;
-    flex-direction: column;
-    flex-wrap: wrap;
-    margin-bottom: 1rem;
-    width: 25rem;
- }
- 
- .input-box-form input {
+}
+
+.form-header-contato h1::after {
+   content: '';
+   display: block;
+   width: 15rem;
+   height: 0.3rem;
+   background-color: #3B3BB8;
+   margin: 0 auto;
+   position: absolute;
+   border-radius: 10px;
+}
+
+.input-group-form {
+   display: flex;
+   flex-wrap: wrap;
+   padding: 1rem 0;
+   justify-content: center;
+}
+
+.input-box-form {
+   display: flex;
+   flex-direction: column;
+   flex-wrap: wrap;
+   margin-bottom: 1rem;
+   width: 25rem;
+}
+
+.input-box-form input {
    height: 3.5rem;
-    margin: 0.6rem 0;
-    padding: 0.8rem 1.2rem;
-    border: none;
-    border-radius: 8px;
-    box-shadow: 1px 1px 6px #0000001c;
- 
- }
- 
- .input-box-form input:hover {
-    background-color: #eeeeee75;
- }
- 
- .input-box-form label {
+   margin: 0.6rem 0;
+   padding: 0.8rem 1.2rem;
+   border: none;
+   border-radius: 8px;
+   box-shadow: 1px 1px 6px #0000001c;
+
+}
+
+.input-box-form input:hover {
+   background-color: #eeeeee75;
+}
+
+.input-box-form label {
    font-family: 'Inter', sans-serif;
-    font-size: 1rem;
-    font-weight: 600;
-    color: #000000c0;
- }
- 
- .input-box-form input::placeholder {
-    color: #000000be;
- }
- 
- input#box-menssagem {
-    height: 15vh;
-    max-height: 100vh;
-    margin-bottom: 0;
-    
- }
- 
- input#box-menssagem::placeholder {
-    position: absolute;
- }
- 
- .botao-concluir-form button {
-    width: 100%;
-    height: 3.5rem;
-    font-family: 'Urbanist', sans-serif;
+   font-size: 1rem;
+   font-weight: 600;
+   color: #000000c0;
+}
+
+.input-box-form input::placeholder {
+   color: #000000be;
+}
+
+input#box-menssagem {
+   height: 15vh;
+   max-height: 100vh;
+   margin-bottom: 0;
+
+}
+
+input#box-menssagem::placeholder {
+   position: absolute;
+}
+
+.botao-concluir-form button {
+   width: 100%;
+   height: 3.5rem;
+   font-family: 'Urbanist', sans-serif;
    font-weight: 800;
    font-size: 22px;
-    margin-top: 0.5rem;
-    background-color: #3B3BB8;
-    /* padding: 0.62rem; */
-    border-radius: 5px;
-    cursor: pointer;
-    align-items: center;
-    letter-spacing: 0.1rem;
-    transition: 0.25s;
- 
- }
- .botao-concluir-form:hover button, .botao-concluir-form:focus{
+   margin-top: 0.5rem;
+   background-color: #3B3BB8;
+   border-radius: 5px;
+   cursor: pointer;
+   align-items: center;
+   letter-spacing: 0.1rem;
+   transition: 0.25s;
+
+}
+
+.botao-concluir-form:hover button,
+.botao-concluir-form:focus {
    background-color: #FFF;
    border: 3px solid #3B3BB8;
 }
- 
- .botao-concluir-form a {
-    text-decoration: none;
-    color: #fff;
-    padding: 3rem;
-    /* font-size: 18px; */
-    letter-spacing: 0.4rem;
- }
- .botao-concluir-form:hover a, .botao-concluir-form:focus a{
+
+.botao-concluir-form a {
+   text-decoration: none;
+   color: #fff;
+   padding: 3rem;
+   letter-spacing: 0.4rem;
+}
+
+.botao-concluir-form:hover a,
+.botao-concluir-form:focus a {
    color: #3B3BB8;
 }
 
- 
- .second-section {
 
-  /*  border: dashed; */
-    display: flex;
-    flex-direction: column;
-    /* justify-content:; */
-    color: #fff;
- }
- 
- div#caixa-de-contato {
-   /* padding: 10rem auto; */
-   margin: 10rem auto;
-   /* border: dashed; */
-   /* justify-content: baseline; */
+.second-section {
    display: flex;
    flex-direction: column;
-   /*  display: flex;
-    flex-direction: column;
-    align-items: center; */
- }
- 
- div#caixa-de-contato h1 {
-   
+   color: #fff;
+}
+
+div#caixa-de-contato {
+   margin: 10rem auto;
+   display: flex;
+   flex-direction: column;
+}
+
+div#caixa-de-contato h1 {
+
    font-family: 'Urbanist', sans-serif;
    font-size: 68px;
    font-weight: 800;
-    width: 40rem;
-    display: flex;
-    flex-direction: column;
-    /* align-items: center; */
-    letter-spacing: 5px;
-    /* padding: 10rem; */
-    
- 
- }
- 
- div#caixa-de-contato h2 {
-    width: 400px;
-     font-family: 'Urbanist', sans-serif;
-    text-align: center;
-    font-size: 25px;
-    font-weight: 500;
-    letter-spacing: 4px;
- }
- 
- .informacao-de-contato {
-    padding: 20px;
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    gap: 20px;
- 
- }
- 
- .informacao-de-contato div {
- 
-    width: 300px;
- }
- 
- .informacao-de-contato img {
-    color: #fff;
-    align-items: baseline;
- 
- }
- 
- .informacao-de-contato h3 {
-    font-family: 'Inter', sans-serif;
-    font-weight: 700;
-    align-self: flex-start;
-    align-items: baseline;
- }
- 
- .informacao-de-contato p {
-    align-items: baseline;
-    font-family: 'Inter', sans-serif;
-    font-weight: 100;
-    align-self: flex-start;
- 
- }
- /* ----------- Mensagem de erro ----------- */
+   width: 40rem;
+   display: flex;
+   flex-direction: column;
+   letter-spacing: 5px;
+
+}
+
+div#caixa-de-contato h2 {
+   width: 400px;
+   font-family: 'Urbanist', sans-serif;
+   text-align: center;
+   font-size: 25px;
+   font-weight: 500;
+   letter-spacing: 4px;
+}
+
+.informacao-de-contato {
+   padding: 20px;
+   display: flex;
+   flex-direction: row;
+   align-items: center;
+   gap: 20px;
+
+}
+
+.informacao-de-contato div {
+
+   width: 300px;
+}
+
+.informacao-de-contato img {
+   color: #fff;
+   align-items: baseline;
+
+}
+
+.informacao-de-contato h3 {
+   font-family: 'Inter', sans-serif;
+   font-weight: 700;
+   align-self: flex-start;
+   align-items: baseline;
+}
+
+.informacao-de-contato p {
+   align-items: baseline;
+   font-family: 'Inter', sans-serif;
+   font-weight: 100;
+   align-self: flex-start;
+
+}
+
 .mensagem-erro {
    display: block;
    color: red;
    font-family: 'Inter', sans-serif;
    font-size: 0.8rem;
-   font-weight:bold 100;
+   font-weight: bold 100;
    margin-top: 0.5rem;
    padding-left: 0.5rem;
 }
+
 .erro input {
    border: 0.1rem solid red;
 

@@ -1,5 +1,5 @@
 
-
+// --------------------- Vetor com os inputs ---------------------------------------
 const inputs = document.querySelectorAll('input')
 
 
@@ -15,7 +15,7 @@ function valida(input) {
     if (validadores[tipoDeInput]) {
         validadores[tipoDeInput](input)
     }
-    
+
     if (input.validity.valid) {
         input.parentElement.classList.remove('erro')
         input.parentElement.querySelector('.mensagem-erro').innerHTML = ''
@@ -27,6 +27,7 @@ function valida(input) {
 
 }
 
+// ------------------- Array com os erros para que seja tratado. ---------------------------
 const tiposDeErro = [
     'valueMissing',
     'typeMismatch',
@@ -34,6 +35,8 @@ const tiposDeErro = [
     'customError',
 
 ]
+
+// ------------------- Objeto com os erros --------------------------------------
 
 const mensagemErro = {
     nome: {
@@ -108,7 +111,7 @@ const mensagemErro = {
 
 
 }
-
+// --------------- Responsável em validar as funções e retornar os erros se necessario --------------------------
 const validadores = {
     dataNascimento: input => validaDataNascimento(input),
     cep: input => chamaCEP(input),
@@ -117,7 +120,7 @@ const validadores = {
 
 }
 
-
+// ------------------- Validação de e-mail, aqui verifica se os campos são iguais ------------------------------
 function validaEmail(input) {
     const email = document.querySelector('#email').value
     const confirmeEmail = input.value
@@ -135,7 +138,7 @@ function validaEmail(input) {
         return
     }
 }
-
+// ------------------- Validação de senha, aqui verifica se os campos são iguais ------------------------------
 function validaSenha(input) {
     const password = document.querySelector('#password').value
     const confirmePassword = input.value
@@ -153,7 +156,7 @@ function validaSenha(input) {
         return
     }
 }
-
+// ---------------------- responsável em verificar se o input atende as normas -------------------------------
 function mostraMensagemErro(tipoDeInput, input) {
     let mensagem = ''
 
@@ -166,24 +169,24 @@ function mostraMensagemErro(tipoDeInput, input) {
 
     return mensagem
 }
-
+// ---------------------- responsável em Validar a idade e só permitir cadastro se maior que 18 anos.  -------------------------------
 function validaDataNascimento(input) {
     const dataRecebida = new Date(input.value)
     let mensagem = ''
 
-    if (!maiorQue18(dataRecebida)) { 
+    if (!maiorQue18(dataRecebida)) {
         mensagem = 'Você deve ser maior que 18 anos para se cadastrar'
     }
 
     input.setCustomValidity(mensagem)
 }
- 
+
 function maiorQue18(data) {
     const dataAtual = new Date()
     const dataMais18 = new Date(data.getUTCFullYear() + 18, data.getUTCMonth(), data.getUTCDate())
     return dataMais18 <= dataAtual
 }
-
+// ---------------------- API responsável em fazer a requisição e validação do cep e endereço -------------------------------
 
 function chamaCEP(input) {
     const cep = input.value.replace(/\D/g, '')
@@ -215,6 +218,7 @@ function chamaCEP(input) {
     }
 }
 
+// ---------------------- Essa função faz o preenchimento automatico dos campos endereço. -------------------------------
 function preencheCamposComCep(data) {
     const logradouro = document.querySelector('[data-tipo="logradouro"]')
     const cidade = document.querySelector('[data-tipo="cidade"]')
@@ -227,7 +231,7 @@ function preencheCamposComCep(data) {
     estado.value = data.uf
     bairro.value = data.bairro
 }
-
+// ---------------------------- Cadastro usuario -----------------------------------
 
 const confEmail = document.getElementById('confirme-email')
 const confSenha = document.getElementById('confirme-password')
@@ -250,38 +254,38 @@ const inputEmail = document.getElementById('emailL')
 const inputSenha = document.getElementById('senhaA')
 
 const botaoEntrou = document.getElementById('fomrLogin')
-if(botaoEntrou){
-botaoEntrou.addEventListener('submit', (e) => {
-    e.preventDefault()
 
-    let listLogin = []
-    let objLogin = {
-        emails: '',
-        senhas: ''
-    }
+if (botaoEntrou) {
+    botaoEntrou.addEventListener('submit', (e) => {
+        e.preventDefault()
 
-    listLogin = JSON.parse(localStorage.getItem('dadosLogin'))
+        let listLogin = []
+        let objLogin = {
+            emails: '',
+            senhas: ''
+        }
 
-    listLogin.forEach((item) => {
-        if (inputEmail.value == item.email && inputSenha.value == item.senha) {
+        listLogin = JSON.parse(localStorage.getItem('dadosLogin'))
 
-            objLogin = {
-                emails: item.email,
-                senhas: item.senha
+        listLogin.forEach((item) => {
+            if (inputEmail.value == item.email && inputSenha.value == item.senha) {
+
+                objLogin = {
+                    emails: item.email,
+                    senhas: item.senha
+                }
             }
+
+        })
+        if (inputEmail.value == objLogin.emails && inputSenha.value == objLogin.senhas) {
+            window.location.replace("/paginas/bemVindo.html")
+            return
+        } else {
+            alert('Acesso negado')
+            return
         }
 
     })
-    if (inputEmail.value == objLogin.emails && inputSenha.value == objLogin.senhas) {
-        window.location.replace("/paginas/bemVindo.html")
-        return
-    } else {
-        alert('Acesso negado')
-        return
-    }
-
-
-})
 
 
 }

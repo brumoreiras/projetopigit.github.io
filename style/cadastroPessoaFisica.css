@@ -1,12 +1,3 @@
-/* @import "/style/estilo.css";
-@import "/style/cadastroPessoaFisica.css"; */
-
-
-/*Estilização pagina cadastro */
-/* #principal {
-   height: auto;
-}
- */
 .first-section-cadastro-pf {
    width: 100%;
    order: 2;
@@ -31,7 +22,6 @@
    justify-content: center;
    width: 10rem;
    height: 35rem;
-   /* margin-left: 13rem; */
 
 }
 
@@ -54,7 +44,6 @@
    padding: 3rem;
    border-radius: 8px;
    height: auto;
-   /*  margin: 3rem auto; */
    border: 0.1px solid rgba(0, 0, 0, .2);
    box-shadow: 5px 3px 3px 5px rgba(0, 0, 0, .2);
    order: 1;
@@ -138,11 +127,8 @@
    font-family: 'Urbanist', sans-serif;
    font-weight: 800;
    font-size: 22px;
-   font-size: 1.5rem;
-   /* margin-top: 0.5rem; */
+   color: #FFF;
    background-color: #3B3BB8;
-   /* padding: 0.2rem; */
-   /* padding: 0.80rem; */
    border: 0;
    border-radius: 5px;
    cursor: pointer;
@@ -156,19 +142,9 @@
 .botao-concluir-cadastro-pf:focus {
    background-color: #FFF;
    border: 3px solid #3B3BB8;
-}
-
-.botao-concluir-cadastro-pf a {
-   text-decoration: none;
-   color: #fff;
-
-}
-
-.botao-concluir-cadastro-pf:hover a,
-.botao-concluir-cadastro-pf:focus a {
    color: #3B3BB8;
-   padding: 1rem;
 }
+
 
 .titulo-cadastro {
    width: 100%;
@@ -194,7 +170,6 @@
 
 }
 
-/* ----------- Mensagem de erro ----------- */
 .mensagem-erro {
    display: block;
    color: red;
